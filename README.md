@@ -20,6 +20,8 @@ npm run dev
 3. Workflow **Publish WebProxy Monitor** автоматически выполнит тесты и опубликует папку `site/` при push в `main`. Для повторного запуска используйте **Actions → Publish WebProxy Monitor → Run workflow**.
 4. После успешного deploy адрес будет **https://nicegenn.github.io/WebProxy/**. Ссылка появится в результате workflow и в Settings → Pages.
 
+Также поддерживается **Deploy from a branch → main → / (root)**: корневой `index.html` открывает приложение в `site/`, а `.nojekyll` отключает обработку Jekyll. В этом режиме адрес `https://nicegenn.github.io/WebProxy/` перенаправляет на `https://nicegenn.github.io/WebProxy/site/`.
+
 Ресурсы подключены относительными путями, поэтому сайт работает в подпапке репозитория. Не требуется backend, API-ключ или секрет GitHub в коде. Если репозиторий приватный, доступность Pages зависит от тарифа GitHub.
 
 ## Что означает результат
