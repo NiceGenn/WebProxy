@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131b2b">
+  <meta name="description" content="Мониторинг доступности WebProxy: проверяйте серверы, сравнивайте время ответа и подключайтесь в Telegram.">
+  <title>WebProxy — мониторинг серверов</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M2 12h5l3-8 4 16 3-8h5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5M6 6a8 8 0 0 1 13 3M18 18a8 8 0 0 1-13-3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="3"/><path d="M15 4H7a3 3 0 0 0-3 3v8"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v1"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+</defs></svg>
+<header class="topbar"><div class="topbar-inner">
+  <a class="brand" href="./" aria-label="WebProxy — главная"><span class="brand-icon"><svg><use href="#i-pulse"/></svg></span>WebProxy<span class="brand-tag">MONITOR</span></a>
+  <nav aria-label="Навигация"><a class="nav-active" href="#servers">Серверы</a><button id="about-open" class="nav-link">Как это работает <svg><use href="#i-arrow"/></svg></button></nav>
+  <span class="header-badge"><span class="dot"></span>Проверка из вашего браузера</span>
+</div></header>
+<main>
+  <section class="intro">
+    <div class="intro-copy"><div class="eyebrow"><span></span> СВОБОДА БЫТЬ НА СВЯЗИ</div><h1>Ваш маршрут.<br><span>Без лишних преград.</span></h1><p>Все WebProxy в одном месте. Проверяйте доступность,<br class="desktop-break"> выбирайте быстрый сервер и оставайтесь на связи.</p><div class="intro-actions"><button id="check-all" class="button primary"><svg><use href="#i-refresh"/></svg><span>Проверить серверы</span></button><span id="last-check">Ещё не проверяли</span></div></div>
+    <aside class="network-card" aria-label="Схема подключения"><div class="network-top"><span><span class="dot"></span> WEBPROXY NETWORK</span><span class="network-tag">HTTPS</span></div><div class="network-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="network-line line-one"></div><div class="network-line line-two"></div><div class="network-line line-three"></div><div class="node node-one"><svg><use href="#i-globe"/></svg></div><div class="node node-two"><svg><use href="#i-globe"/></svg></div><div class="node node-three"><svg><use href="#i-globe"/></svg></div><div class="central-node"><svg><use href="#i-pulse"/></svg></div><span class="art-label">YOUR NEXT CONNECTION</span><span class="tiny-point point-one"></span><span class="tiny-point point-two"></span></div><div class="network-bottom"><div><strong id="network-count">32</strong><span>маршрута на выбор</span></div><span class="network-caption">Один клик до Telegram <svg><use href="#i-arrow"/></svg></span></div></aside>
+  </section>
+  <section class="stats" aria-label="Результаты последней проверки">
+    <article class="stat"><div class="stat-label">Всего серверов <span class="stat-icon"><svg><use href="#i-globe"/></svg></span></div><div class="stat-value" id="total-count">32</div><div class="stat-caption">В вашей коллекции</div></article>
+    <article class="stat"><div class="stat-label">Ответ получен <span class="status-dot reachable"></span></div><div class="stat-value green" id="reachable-count">—</div><div class="stat-caption">HTTPS-сервер доступен</div></article>
+    <article class="stat"><div class="stat-label">Нет ответа <span class="status-dot unreachable"></span></div><div class="stat-value" id="unreachable-count">—</div><div class="stat-caption">Нужна повторная проверка</div></article>
+    <article class="stat"><div class="stat-label">Среднее время <span class="stat-icon"><svg><use href="#i-pulse"/></svg></span></div><div class="stat-value" id="average">— <small>мс</small></div><div class="stat-caption">По ответившим серверам</div></article>
+  </section>
+  <section id="servers" class="servers-section">
+    <div class="section-heading"><div><h2>Серверы <span id="heading-count">32</span></h2><p>Найдите подключение, которое подходит вам.</p></div><div class="collection-actions"><button id="export" class="button secondary"><svg><use href="#i-download"/></svg>Экспорт</button><button id="add-open" class="button secondary"><svg><use href="#i-plus"/></svg>Добавить ссылки</button></div></div>
+    <div class="server-panel"><div class="toolbar"><div class="tabs" role="group" aria-label="Фильтр серверов"><button data-filter="all" class="tab active" aria-pressed="true">Все <span id="tab-all">32</span></button><button data-filter="reachable" class="tab" aria-pressed="false"><span class="dot green-dot"></span>С ответом</button><button data-filter="unreachable" class="tab" aria-pressed="false"><span class="dot red-dot"></span>Без ответа</button></div><div class="table-controls"><label class="search"><svg><use href="#i-search"/></svg><input id="search" type="search" placeholder="Поиск сервера…" aria-label="Поиск по домену"></label><select id="sort" aria-label="Сортировка серверов"><option value="default">По порядку</option><option value="latency">Сначала быстрые</option><option value="name">По имени</option></select></div></div>
+    <div class="progress-track"><div id="progress-bar"></div></div>
+    <div class="table-scroll"><table><thead><tr><th class="number-col">№</th><th>СЕРВЕР</th><th>СТАТУС</th><th>ВРЕМЯ ОТВЕТА</th><th class="history-col">ПОСЛЕДНИЕ 12 ПРОВЕРОК</th><th class="action-col">ПОДКЛЮЧЕНИЕ</th></tr></thead><tbody id="rows"></tbody></table></div>
+    <div id="empty" class="empty" hidden><svg><use href="#i-search"/></svg><h3>Серверы не найдены</h3><p>Измените поиск или выберите другой фильтр.</p></div>
+    <div class="panel-footer"><span id="shown-count">Показано 32 сервера</span><label class="auto-toggle"><input id="auto" type="checkbox"><span class="switch"></span>Автопроверка <span class="interval">60 сек</span></label></div></div>
+    <div class="check-note"><svg><use href="#i-info"/></svg><p>Проверяем HTTPS-доступность с вашего устройства. Ответ сервера не гарантирует работу WebProxy в Telegram. Время включает соединение и ответ — это не сетевой ping.</p></div>
+  </section>
+</main>
+<footer><a class="footer-brand" href="./">WebProxy<span> / MONITOR</span></a><span>Оставайтесь на связи.</span><span>Без регистрации. Без лишнего.</span></footer>
+<dialog id="add-dialog"><form id="add-form"><div class="dialog-heading"><h2>Добавить WebProxy</h2><button type="button" class="close-dialog" aria-label="Закрыть">×</button></div><p>Вставьте ссылки t.me/webproxy — по одной на строку. Они сохранятся только в этом браузере.</p><label for="links">Ссылки на серверы</label><textarea id="links" rows="7" placeholder="https://t.me/webproxy?server=…&secret=…" required></textarea><p id="add-error" class="error" role="alert"></p><div class="dialog-actions"><button type="button" class="button secondary close-dialog">Отмена</button><button type="submit" class="button primary">Добавить</button></div></form></dialog>
+<dialog id="about-dialog"><div class="dialog-heading"><h2>Что мы проверяем</h2><button class="close-dialog" aria-label="Закрыть">×</button></div><p>Сайт отправляет HTTPS-запрос на корень домена каждого сервера, без параметра secret. Проверка выполняется с вашего устройства: результаты могут отличаться в другой сети.</p><div class="explanation"><strong><span class="dot green-dot"></span> Ответ получен</strong><p>Браузер получил ответ. Из-за ограничений CORS сайт не видит HTTP-код и содержимое ответа, поэтому даже ответ с ошибкой может попасть в эту категорию.</p><strong><span class="dot red-dot"></span> Нет ответа</strong><p>Запрос завершился ошибкой или занял больше 8 секунд. Возможные причины: недоступность сервера, сертификат, блокировка или ограничения браузера.</p></div><p>Работу самого прокси можно проверить подключением в Telegram. История хранит до 12 реальных проверок в этом браузере. Автопроверка приостанавливается, когда вкладка скрыта.</p><button class="button primary close-dialog">Понятно</button></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><div class="noscript">Для мониторинга включите JavaScript в браузере.</div></noscript>
+</body>
+</html>
