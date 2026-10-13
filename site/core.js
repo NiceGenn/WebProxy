@@ -16,10 +16,27 @@ export function proxyLink(proxy) {
 export function telegramLink(proxy) {
   return 'tg://webproxy' + new URL(proxyLink(proxy)).search;
 }
-export function selectProxies(proxies, { search = '', filter = 'all', sort = 'default' } = {}) {
+export function selectProxies(proxies, { search = '', filter = 'all', sort = 'default', direction = 'asc' } = {}) {
   const rows = proxies.filter(p => p.server.includes(search.toLowerCase().trim()) && (filter === 'all' || p.status === filter));
-  if (sort === 'latency') rows.sort((a, b) => (a.status === 'reachable' ? a.latency : Infinity) - (b.status === 'reachable' ? b.latency : Infinity));
-  if (sort === 'name') rows.sort((a, b) => a.server.localeCompare(b.server));
+  const order = new Map(proxies.map((p, index) => [p, index]));
+  const statusOrder = { reachable: 0, checking: 1, unknown: 2, unreachable: 3 };
+  const value = p => {
+    if (sort === 'name') return p.server;
+    if (sort === 'status') return statusOrder[p.status] ?? statusOrder.unknown;
+    if (sort === 'latency') return p.status === 'reachable' && Number.isFinite(p.latency) ? p.latency : null;
+    if (sort === 'history') {
+      const history = (p.history || []).filter(h => h === 'reachable' || h === 'unreachable');
+      return history.length ? history.filter(h => h === 'reachable').length / history.length : null;
+    }
+    return order.get(p);
+  };
+  rows.sort((a, b) => {
+    const left = value(a), right = value(b);
+    // Missing measurements stay at the bottom in both directions.
+    if (left === null || right === null) return left === right ? order.get(a) - order.get(b) : left === null ? 1 : -1;
+    const compared = typeof left === 'string' ? left.localeCompare(right) : left - right;
+    return compared ? compared * (direction === 'desc' ? -1 : 1) : order.get(a) - order.get(b);
+  });
   return rows;
 }
 export async function probe(server, { signal, timeout = 8000, fetchFn = fetch, now = () => performance.now() } = {}) {

@@ -1,5 +1,5 @@
-import { DEFAULT_PROXIES } from './proxies.js?v=20261013-3';
-import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js?v=20261013-3';
+import { DEFAULT_PROXIES } from './proxies.js?v=20261013-4';
+import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js?v=20261013-4';
 
 const $ = selector => document.querySelector(selector);
 const STORAGE_KEY = 'webproxy-monitor-v1';
@@ -18,6 +18,8 @@ const proxies = [...DEFAULT_PROXIES, ...custom].map(p => {
   return { ...p, status: valid ? result.status : 'unknown', latency: valid ? result.latency : null, checkedAt: valid ? result.checkedAt : null, history: Array.isArray(result?.history) ? result.history.filter(h => ['reachable', 'unreachable'].includes(h)).slice(-12) : [] };
 });
 let filter = 'all';
+let sort = 'default';
+let direction = 'asc';
 let running = false;
 let roundController;
 let completed = 0;
@@ -36,8 +38,18 @@ function persist() {
   for (const p of proxies) if (p.status !== 'checking' && p.checkedAt) results[p.server] = { status: p.status, latency: p.latency, checkedAt: p.checkedAt, history: p.history };
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ custom, results, lastFinished })); } catch { notify('Хранилище браузера недоступно. Данные останутся до закрытия вкладки.'); }
 }
-function visibleRows() { return selectProxies(proxies, { search: $('#search').value, filter, sort: $('#sort').value }); }
+function visibleRows() { return selectProxies(proxies, { search: $('#search').value, filter, sort, direction }); }
 function render() {
+  $('#sort').value = sort + (direction === 'desc' ? '-desc' : '');
+  for (const button of document.querySelectorAll('.column-sort')) {
+    const active = button.dataset.sort === sort;
+    button.closest('th').setAttribute('aria-sort', active ? direction === 'asc' ? 'ascending' : 'descending' : 'none');
+    button.querySelector('.sort-indicator').textContent = active ? direction === 'asc' ? '↑' : '↓' : '↕';
+    const nextDirection = active && direction === 'asc' ? 'убыванию' : 'возрастанию';
+    const label = `Сортировать: ${button.dataset.label}, по ${nextDirection}`;
+    button.setAttribute('aria-label', label);
+    button.title = label;
+  }
   const visible = visibleRows();
   const fragment = document.createDocumentFragment();
   for (const p of visible) {
@@ -144,7 +156,17 @@ async function checkAll() {
 }
 $('#check-all').addEventListener('click', checkAll);
 $('#search').addEventListener('input', render);
-$('#sort').addEventListener('change', render);
+$('#sort').addEventListener('change', () => {
+  const selection = $('#sort').value;
+  direction = selection.endsWith('-desc') ? 'desc' : 'asc';
+  sort = direction === 'desc' ? selection.slice(0, -5) : selection;
+  render();
+});
+for (const button of document.querySelectorAll('.column-sort')) button.addEventListener('click', () => {
+  direction = sort === button.dataset.sort && direction === 'asc' ? 'desc' : 'asc';
+  sort = button.dataset.sort;
+  render();
+});
 for (const tab of document.querySelectorAll('.tab')) tab.addEventListener('click', () => {
   filter = tab.dataset.filter;
   for (const other of document.querySelectorAll('.tab')) { const active = other === tab; other.classList.toggle('active', active); other.setAttribute('aria-pressed', String(active)); }

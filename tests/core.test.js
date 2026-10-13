@@ -55,3 +55,20 @@ test('User cancellation produces no failure result', async () => {
   controller.abort();
   assert.equal(await pending, null);
 });
+
+test('Descending latency keeps missing measurements last and equal measurements stable', () => {
+  const rows = [{ server: 'a.com', status: 'unreachable' }, { server: 'b.com', status: 'reachable', latency: 100 }, { server: 'c.com', status: 'reachable', latency: 800 }, { server: 'd.com', status: 'unknown' }, { server: 'e.com', status: 'reachable', latency: 100 }];
+  assert.deepEqual(selectProxies(rows, { sort: 'latency', direction: 'desc' }).map(p => p.server), ['c.com', 'b.com', 'e.com', 'a.com', 'd.com']);
+  assert.deepEqual(selectProxies(rows, { sort: 'default', direction: 'desc' }).map(p => p.server), ['e.com', 'd.com', 'c.com', 'b.com', 'a.com']);
+});
+test('Name and status sorting support both directions', () => {
+  const rows = [{ server: 'b.com', status: 'unknown' }, { server: 'a.com', status: 'reachable' }, { server: 'c.com', status: 'unreachable' }];
+  assert.deepEqual(selectProxies(rows, { sort: 'name', direction: 'desc' }).map(p => p.server), ['c.com', 'b.com', 'a.com']);
+  assert.deepEqual(selectProxies(rows, { sort: 'status' }).map(p => p.server), ['a.com', 'b.com', 'c.com']);
+  assert.deepEqual(selectProxies(rows, { sort: 'status', direction: 'desc', search: '.com' }).map(p => p.server), ['c.com', 'b.com', 'a.com']);
+});
+test('History sorts by response share and places empty history last in both directions', () => {
+  const rows = [{ server: 'a.com', history: [] }, { server: 'b.com', history: ['reachable', 'unreachable'] }, { server: 'c.com', history: ['reachable', 'reachable'] }, { server: 'd.com', history: ['unreachable'] }];
+  assert.deepEqual(selectProxies(rows, { sort: 'history' }).map(p => p.server), ['d.com', 'b.com', 'c.com', 'a.com']);
+  assert.deepEqual(selectProxies(rows, { sort: 'history', direction: 'desc' }).map(p => p.server), ['c.com', 'b.com', 'd.com', 'a.com']);
+});
