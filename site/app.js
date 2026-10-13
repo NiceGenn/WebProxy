@@ -1,5 +1,5 @@
-import { DEFAULT_PROXIES } from './proxies.js';
-import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js';
+import { DEFAULT_PROXIES } from './proxies.js?v=20261013-2';
+import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js?v=20261013-2';
 
 const $ = selector => document.querySelector(selector);
 const STORAGE_KEY = 'webproxy-monitor-v1';
@@ -42,7 +42,7 @@ function render() {
   const fragment = document.createDocumentFragment();
   for (const p of visible) {
     const row = document.createElement('tr');
-    row.innerHTML = `<td class="number"></td><td><div class="server-cell"><span class="server-avatar"><svg><use href="#i-globe"/></svg></span><span class="server-name"></span></div></td><td><span class="status"><span class="dot"></span><span class="status-label"></span></span></td><td class="latency"></td><td class="history-cell"><div class="history"></div></td><td class="actions-cell"><div class="row-actions"><button class="copy-button"><svg><use href="#i-copy"/></svg></button><a class="connect-button">Подключить <svg><use href="#i-arrow"/></svg></a></div></td>`;
+    row.innerHTML = `<td class="number"></td><td><div class="server-cell"><span class="server-avatar"><svg><use href="#i-globe"/></svg></span><span class="server-name"></span></div></td><td><span class="status"><span class="dot"></span><span class="status-label"></span></span></td><td class="latency"></td><td class="history-cell"><div class="history"></div></td><td class="actions-cell"><div class="row-actions"><button class="copy-button"><svg><use href="#i-copy"/></svg></button><button type="button" class="connect-button">Подключить <svg><use href="#i-arrow"/></svg></button></div></td>`;
     row.querySelector('.number').textContent = String(proxies.indexOf(p) + 1).padStart(2, '0');
     row.querySelector('.server-name').textContent = p.server;
     const status = row.querySelector('.status');
@@ -61,7 +61,6 @@ function render() {
       const bar = document.createElement('span'); bar.className = `history-bar ${value}`; bar.title = value === 'unknown' ? 'Нет данных' : labels[value]; history.append(bar);
     }
     const connect = row.querySelector('.connect-button');
-    connect.href = telegramLink(p);
     connect.addEventListener('click', () => showConnection(p));
     connect.setAttribute('aria-label', `Подключить ${p.server} в Telegram`);
     const copy = row.querySelector('.copy-button');
@@ -91,16 +90,20 @@ function showConnection(p) {
   $('#connection-server').textContent = p.server;
   $('#connection-secret').textContent = p.secret;
   $('#launch-telegram').href = telegramLink(p);
+  $('#telegram-command').value = telegramLink(p);
   $('#connection-dialog').showModal();
 }
-$('#connection-copy').addEventListener('click', () => { if (selectedConnection) copyLink(selectedConnection); });
+$('#connection-copy').addEventListener('click', () => { if (selectedConnection) copyText(telegramLink(selectedConnection), 'Прямая ссылка tg:// скопирована'); });
+$('#telegram-command').addEventListener('click', event => event.target.select());
 async function copyLink(p) {
-  const text = proxyLink(p);
-  try { await navigator.clipboard.writeText(text); notify('Ссылка скопирована'); }
+  return copyText(proxyLink(p), 'Ссылка для чата скопирована');
+}
+async function copyText(text, message) {
+  try { await navigator.clipboard.writeText(text); notify(message); }
   catch {
     // Fallback is useful for local HTTP or restricted clipboard access.
     const area = document.createElement('textarea'); area.value = text; area.style.position = 'fixed'; area.style.opacity = '0'; document.body.append(area); area.select();
-    const copied = document.execCommand('copy'); area.remove(); notify(copied ? 'Ссылка скопирована' : 'Копирование недоступно. Скопируйте адрес кнопки подключения.');
+    const copied = document.execCommand('copy'); area.remove(); notify(copied ? message : 'Копирование недоступно. Выделите и скопируйте прямую ссылку в окне подключения.');
   }
 }
 async function checkAll() {
