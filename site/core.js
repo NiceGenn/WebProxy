@@ -13,6 +13,9 @@ export function proxyLink(proxy) {
   url.searchParams.set('secret', proxy.secret);
   return url.href;
 }
+export function telegramLink(proxy) {
+  return 'tg://webproxy' + new URL(proxyLink(proxy)).search;
+}
 export function selectProxies(proxies, { search = '', filter = 'all', sort = 'default' } = {}) {
   const rows = proxies.filter(p => p.server.includes(search.toLowerCase().trim()) && (filter === 'all' || p.status === filter));
   if (sort === 'latency') rows.sort((a, b) => (a.status === 'reachable' ? a.latency : Infinity) - (b.status === 'reachable' ? b.latency : Infinity));

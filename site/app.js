@@ -1,5 +1,5 @@
 import { DEFAULT_PROXIES } from './proxies.js';
-import { parseLink, proxyLink, selectProxies, probe } from './core.js';
+import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js';
 
 const $ = selector => document.querySelector(selector);
 const STORAGE_KEY = 'webproxy-monitor-v1';
@@ -42,7 +42,7 @@ function render() {
   const fragment = document.createDocumentFragment();
   for (const p of visible) {
     const row = document.createElement('tr');
-    row.innerHTML = `<td class="number"></td><td><div class="server-cell"><span class="server-avatar"><svg><use href="#i-globe"/></svg></span><span class="server-name"></span></div></td><td><span class="status"><span class="dot"></span><span class="status-label"></span></span></td><td class="latency"></td><td class="history-cell"><div class="history"></div></td><td class="actions-cell"><div class="row-actions"><button class="copy-button"><svg><use href="#i-copy"/></svg></button><a class="connect-button" target="_blank" rel="noopener noreferrer">Подключить <svg><use href="#i-arrow"/></svg></a></div></td>`;
+    row.innerHTML = `<td class="number"></td><td><div class="server-cell"><span class="server-avatar"><svg><use href="#i-globe"/></svg></span><span class="server-name"></span></div></td><td><span class="status"><span class="dot"></span><span class="status-label"></span></span></td><td class="latency"></td><td class="history-cell"><div class="history"></div></td><td class="actions-cell"><div class="row-actions"><button class="copy-button"><svg><use href="#i-copy"/></svg></button><a class="connect-button">Подключить <svg><use href="#i-arrow"/></svg></a></div></td>`;
     row.querySelector('.number').textContent = String(proxies.indexOf(p) + 1).padStart(2, '0');
     row.querySelector('.server-name').textContent = p.server;
     const status = row.querySelector('.status');
@@ -61,7 +61,8 @@ function render() {
       const bar = document.createElement('span'); bar.className = `history-bar ${value}`; bar.title = value === 'unknown' ? 'Нет данных' : labels[value]; history.append(bar);
     }
     const connect = row.querySelector('.connect-button');
-    connect.href = proxyLink(p);
+    connect.href = telegramLink(p);
+    connect.addEventListener('click', () => showConnection(p));
     connect.setAttribute('aria-label', `Подключить ${p.server} в Telegram`);
     const copy = row.querySelector('.copy-button');
     copy.setAttribute('aria-label', `Скопировать ссылку ${p.server}`);
@@ -84,6 +85,15 @@ function render() {
   $('#check-all span').textContent = running ? 'Остановить проверку' : 'Проверить серверы';
   $('#check-all').setAttribute('aria-busy', String(running));
 }
+let selectedConnection;
+function showConnection(p) {
+  selectedConnection = p;
+  $('#connection-server').textContent = p.server;
+  $('#connection-secret').textContent = p.secret;
+  $('#launch-telegram').href = telegramLink(p);
+  $('#connection-dialog').showModal();
+}
+$('#connection-copy').addEventListener('click', () => { if (selectedConnection) copyLink(selectedConnection); });
 async function copyLink(p) {
   const text = proxyLink(p);
   try { await navigator.clipboard.writeText(text); notify('Ссылка скопирована'); }

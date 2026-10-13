@@ -1,12 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { DEFAULT_PROXIES } from '../site/proxies.js';
-import { parseLink, proxyLink, selectProxies, probe } from '../site/core.js';
+import { parseLink, proxyLink, telegramLink, selectProxies, probe } from '../site/core.js';
 
 test('All 32 original links round-trip without modifying their secrets', () => {
   assert.equal(DEFAULT_PROXIES.length, 32);
   assert.equal(new Set(DEFAULT_PROXIES.map(p => p.server)).size, 32);
   for (const p of DEFAULT_PROXIES) assert.deepEqual(parseLink(proxyLink(p)), p);
+});
+test('Connection launches the Telegram WebProxy handler with the original server and secret', () => {
+  for (const proxy of DEFAULT_PROXIES) {
+    const url = new URL(telegramLink(proxy));
+    assert.equal(url.protocol, 'tg:');
+    assert.equal(url.hostname, 'webproxy');
+    assert.equal(url.searchParams.get('server'), proxy.server);
+    assert.equal(url.searchParams.get('secret'), proxy.secret);
+    assert.deepEqual([...url.searchParams.keys()], ['server', 'secret']);
+  }
 });
 test('Imported URLs reject scripts, foreign sites, local addresses and invalid secrets', () => {
   for (const url of ['javascript:alert(1)', 'https://evil.com/webproxy?server=a.com&secret=123456789abcdef0', 'https://t.me/webproxy?server=localhost&secret=123456789abcdef0', 'https://t.me/webproxy?server=127.0.0.1&secret=123456789abcdef0', 'https://t.me/webproxy?server=a.local&secret=123456789abcdef0', 'https://t.me/webproxy?server=a.com&secret=<script>']) assert.throws(() => parseLink(url));
