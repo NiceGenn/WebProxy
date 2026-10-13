@@ -1,5 +1,5 @@
-import { DEFAULT_PROXIES } from './proxies.js?v=20261013-2';
-import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js?v=20261013-2';
+import { DEFAULT_PROXIES } from './proxies.js?v=20261013-3';
+import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js?v=20261013-3';
 
 const $ = selector => document.querySelector(selector);
 const STORAGE_KEY = 'webproxy-monitor-v1';
@@ -89,10 +89,18 @@ function showConnection(p) {
   selectedConnection = p;
   $('#connection-server').textContent = p.server;
   $('#connection-secret').textContent = p.secret;
-  $('#launch-telegram').href = telegramLink(p);
   $('#telegram-command').value = telegramLink(p);
   $('#connection-dialog').showModal();
 }
+$('#launch-telegram').addEventListener('click', () => {
+  if (!selectedConnection) return;
+  try {
+    // Navigate directly during the user gesture; do not pass a tg: anchor through link-click handlers.
+    window.location.assign(telegramLink(selectedConnection));
+  } catch {
+    notify('Браузер заблокировал запуск. Скопируйте прямую ссылку и откройте её через Win+R.');
+  }
+});
 $('#connection-copy').addEventListener('click', () => { if (selectedConnection) copyText(telegramLink(selectedConnection), 'Прямая ссылка tg:// скопирована'); });
 $('#telegram-command').addEventListener('click', event => event.target.select());
 async function copyLink(p) {
