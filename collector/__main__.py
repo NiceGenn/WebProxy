@@ -29,7 +29,7 @@ def auth():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     client = TelegramClient(str(DATA_DIR / "telegram"), api_id, api_hash)
     try:
-        client.start(phone=lambda: input("Telegram phone: "), code_callback=lambda: input("Telegram code: "), password=lambda: getpass.getpass("Telegram 2FA password: "))
+        client.start(phone=lambda: getpass.getpass("Telegram phone (hidden): "), code_callback=lambda: getpass.getpass("Telegram code (hidden): "), password=lambda: getpass.getpass("Telegram 2FA password (hidden): "))
         if not client.is_user_authorized():
             raise RuntimeError("Telegram authorization failed")
     finally:
