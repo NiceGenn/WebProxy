@@ -1,9 +1,10 @@
 export function parseLink(value) {
   const url = new URL(value.trim());
-  if (url.protocol !== 'https:' || url.hostname !== 't.me' || url.pathname !== '/webproxy' || url.port || url.username || url.password) throw new Error('Нужна ссылка https://t.me/webproxy?server=…&secret=…');
-  const server = url.searchParams.get('server')?.toLowerCase();
+  if (!((url.protocol === 'https:' && url.hostname === 't.me' && url.pathname === '/webproxy') || (url.protocol === 'tg:' && url.hostname === 'webproxy' && (url.pathname === '' || url.pathname === '/'))) || url.port || url.username || url.password || url.hash) throw new Error('Нужна ссылка WebProxy с server и secret');
+  if ([...url.searchParams.keys()].sort().join(',') !== 'secret,server') throw new Error('Нужны ровно server и secret');
+  const server = url.searchParams.get('server');
   const secret = url.searchParams.get('secret');
-  if (!server || server.length > 253 || !/^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/.test(server) || /\.(local|localhost|internal|test|invalid)$/.test(server)) throw new Error('Укажите публичное доменное имя сервера');
+  if (!server || server.length > 253 || !/^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/i.test(server) || /\.(local|localhost|internal|test|invalid)$/i.test(server)) throw new Error('Укажите публичное доменное имя сервера');
   if (!secret || !/^[a-f0-9]{16,512}$/i.test(secret)) throw new Error('Параметр secret должен содержать шестнадцатеричные символы');
   return { server, secret };
 }

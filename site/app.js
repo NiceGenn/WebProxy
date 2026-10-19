@@ -1,15 +1,16 @@
-import { DEFAULT_PROXIES } from './proxies.js?v=20261013-4';
-import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js?v=20261013-4';
+import { DEFAULT_PROXIES } from './proxies.js?v=20261013-5';
+import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js?v=20261013-5';
 
 const $ = selector => document.querySelector(selector);
 const STORAGE_KEY = 'webproxy-monitor-v1';
+const keyOf = p => `${p.server}\u0000${p.secret}`;
 let saved = {};
 try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}') || {}; } catch { /* Storage may be unavailable. */ }
 const custom = [];
 for (const item of (Array.isArray(saved.custom) ? saved.custom.slice(0, 68) : [])) {
   try {
     const parsed = parseLink(proxyLink(item));
-    if (!DEFAULT_PROXIES.some(p => p.server === parsed.server) && !custom.some(p => p.server === parsed.server)) custom.push(parsed);
+    if (!DEFAULT_PROXIES.some(p => keyOf(p) === keyOf(parsed)) && !custom.some(p => keyOf(p) === keyOf(parsed))) custom.push(parsed);
   } catch { /* Ignore malformed storage entries. */ }
 }
 const proxies = [...DEFAULT_PROXIES, ...custom].map(p => {
@@ -17,6 +18,7 @@ const proxies = [...DEFAULT_PROXIES, ...custom].map(p => {
   const valid = result && ['reachable', 'unreachable'].includes(result.status) && Number.isFinite(result.checkedAt) && (result.status !== 'reachable' || (Number.isFinite(result.latency) && result.latency > 0));
   return { ...p, status: valid ? result.status : 'unknown', latency: valid ? result.latency : null, checkedAt: valid ? result.checkedAt : null, history: Array.isArray(result?.history) ? result.history.filter(h => ['reachable', 'unreachable'].includes(h)).slice(-12) : [] };
 });
+let collectionStatus = 'Источник: резервный список';
 let filter = 'all';
 let sort = 'default';
 let direction = 'asc';
@@ -93,6 +95,7 @@ function render() {
   $('#average').replaceChildren(document.createTextNode(reachable.length ? Math.round(reachable.reduce((sum, p) => sum + p.latency, 0) / reachable.length).toLocaleString('ru-RU') + ' ' : '— '));
   const unit = document.createElement('small'); unit.textContent = 'мс'; $('#average').append(unit);
   $('#last-check').textContent = running ? `Проверено ${completed} / ${proxies.length}` : lastFinished ? `Проверка: ${new Date(lastFinished).toLocaleString('ru-RU', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })}` : 'Ещё не проверяли';
+  $('#collection-status').textContent = collectionStatus;
   $('#check-all span').textContent = running ? 'Остановить проверку' : 'Проверить серверы';
   $('#check-all').setAttribute('aria-busy', String(running));
 }
@@ -194,7 +197,7 @@ $('#add-form').addEventListener('submit', event => {
   try {
     for (let i = 0; i < lines.length; i++) {
       let p; try { p = parseLink(lines[i]); } catch (error) { throw new Error(`Строка ${i + 1}: ${error.message}`); }
-      if (!proxies.some(old => old.server === p.server) && !parsed.some(old => old.server === p.server)) parsed.push(p);
+      if (!proxies.some(old => keyOf(old) === keyOf(p)) && !parsed.some(old => keyOf(old) === keyOf(p))) parsed.push(p);
     }
     if (proxies.length + parsed.length > 100) throw new Error('Можно хранить не больше 100 серверов.');
     if (!parsed.length) throw new Error('Новых серверов нет: эти домены уже в списке.');
@@ -204,3 +207,29 @@ $('#add-form').addEventListener('submit', event => {
   persist(); render(); $('#links').value = ''; $('#add-dialog').close(); notify(`Добавлено серверов: ${parsed.length}`);
 });
 render();
+async function loadCollected() {
+  try {
+    const response = await fetch('./webproxy.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error('HTTP');
+    const data = await response.json();
+    if (data.schema_version !== 1 || !Array.isArray(data.proxies) || !Number.isFinite(Date.parse(data.collected_at))) throw new Error('Invalid data');
+    const seen = new Set(proxies.map(keyOf));
+    let added = 0;
+    for (const item of data.proxies) {
+      try {
+        const parsed = parseLink(proxyLink(item));
+        if (seen.has(keyOf(parsed))) continue;
+        seen.add(keyOf(parsed));
+        const result = saved.results?.[parsed.server];
+        const valid = result && ['reachable', 'unreachable'].includes(result.status) && Number.isFinite(result.checkedAt) && (result.status !== 'reachable' || (Number.isFinite(result.latency) && result.latency > 0));
+        proxies.push({ ...parsed, status: valid ? result.status : 'unknown', latency: valid ? result.latency : null, checkedAt: valid ? result.checkedAt : null, history: Array.isArray(result?.history) ? result.history.filter(h => ['reachable', 'unreachable'].includes(h)).slice(-12) : [] });
+        added++;
+      } catch { /* Invalid remote entry cannot affect the fallback list. */ }
+    }
+    collectionStatus = `Последний успешный опубликованный сбор: ${new Date(data.collected_at).toLocaleString('ru-RU')} · Добавлено из канала: ${added}`;
+  } catch {
+    collectionStatus = 'Источник: резервный список · обновления недоступны';
+  }
+  render();
+}
+loadCollected();

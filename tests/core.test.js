@@ -21,6 +21,12 @@ test('Connection launches the Telegram WebProxy handler with the original server
 test('Imported URLs reject scripts, foreign sites, local addresses and invalid secrets', () => {
   for (const url of ['javascript:alert(1)', 'https://evil.com/webproxy?server=a.com&secret=123456789abcdef0', 'https://t.me/webproxy?server=localhost&secret=123456789abcdef0', 'https://t.me/webproxy?server=127.0.0.1&secret=123456789abcdef0', 'https://t.me/webproxy?server=a.local&secret=123456789abcdef0', 'https://t.me/webproxy?server=a.com&secret=<script>']) assert.throws(() => parseLink(url));
 });
+
+test('WebProxy deep links retain server spelling and secret, and reject duplicate parameters', () => {
+  const secret = 'Dd0123456789abcdef0123456789ABCDEF';
+  assert.deepEqual(parseLink(`tg://webproxy?server=Web.Example.org&secret=${secret}`), { server: 'Web.Example.org', secret });
+  assert.throws(() => parseLink(`https://t.me/webproxy?server=a.com&secret=${secret}&secret=${secret}`));
+});
 test('Search, status filters and latency sorting preserve source order and put failed checks last', () => {
   const rows = [{ server: 'b.com', status: 'reachable', latency: 250 }, { server: 'a.com', status: 'unreachable', latency: null }, { server: 'c.com', status: 'reachable', latency: 90 }];
   assert.deepEqual(selectProxies(rows, { sort: 'latency' }).map(p => p.server), ['c.com', 'b.com', 'a.com']);

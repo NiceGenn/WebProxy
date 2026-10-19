@@ -1,0 +1,7 @@
+.git
+.env
+data
+*.session*
+node_modules
+tests
+site

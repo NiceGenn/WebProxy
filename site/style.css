@@ -4,3 +4,4 @@
 .command-label{margin:18px 0 8px;font-size:12px}.telegram-command{width:100%;padding:11px;border:1px solid #dde6e1;border-radius:6px;background:#f8faf9;font-family:var(--mono);font-size:11px;color:#477261;margin-bottom:16px}
 .column-sort{display:inline-flex;align-items:center;gap:5px;background:none;border:0;padding:0;font:inherit;letter-spacing:inherit;color:inherit;text-align:left;white-space:nowrap}.column-sort:hover{color:var(--green)}.sort-indicator{font-size:11px;letter-spacing:0;color:#a8b1ba}th[aria-sort="ascending"] .column-sort,th[aria-sort="descending"] .column-sort,th[aria-sort="ascending"] .sort-indicator,th[aria-sort="descending"] .sort-indicator{color:var(--green)}
 th[aria-sort]{padding:0}.column-sort{width:100%;padding:14px;min-height:44px}.number-col .column-sort{padding-left:23px}
+#collection-status{margin-top:8px;max-width:420px;font-size:11px;line-height:1.45}

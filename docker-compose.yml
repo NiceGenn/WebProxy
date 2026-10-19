@@ -1,0 +1,17 @@
+services:
+  collector:
+    build: .
+    env_file: .env
+    volumes:
+      - collector_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-m", "collector", "health"]
+      interval: 1m
+      timeout: 10s
+      start_period: 3m
+      retries: 3
+    init: true
+volumes:
+  collector_data:
+    name: webproxy_tg_data
