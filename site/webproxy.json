@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-20T00:01:53+00:00",
+  "collected_at": "2026-10-20T06:45:25+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -30,10 +30,10 @@
     {
       "server": "45.192.203.61.sslip.io",
       "secret": "57615e31da1424569f1941f709e4264e",
-      "source_url": "https://t.me/webproxy/350",
-      "message_date": "2026-10-18T08:30:01+00:00",
+      "source_url": "https://t.me/webproxy/367",
+      "message_date": "2026-10-20T06:45:01+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-10-20T06:45:23+00:00"
     },
     {
       "server": "67.kfwl.lol",
