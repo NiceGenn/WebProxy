@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "channel": "webproxy",
+  "collected_at": "2026-10-20T00:01:53+00:00",
+  "proxies": [
+    {
+      "server": "154.85.19.193.sslip.io",
+      "secret": "55608b67a5b83c881a65b0e1cd8d4c90",
+      "source_url": "https://t.me/webproxy/351",
+      "message_date": "2026-10-18T10:30:01+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "45.192.194.210.sslip.io",
+      "secret": "42591462ee26ea6a4d3826fdf5b15933",
+      "source_url": "https://t.me/webproxy/350",
+      "message_date": "2026-10-18T08:30:01+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "45.192.201.29.sslip.io",
+      "secret": "fbbb522c8f1291f1a3d86d422e3affd4",
+      "source_url": "https://t.me/webproxy/351",
+      "message_date": "2026-10-18T10:30:01+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "45.192.203.61.sslip.io",
+      "secret": "57615e31da1424569f1941f709e4264e",
+      "source_url": "https://t.me/webproxy/350",
+      "message_date": "2026-10-18T08:30:01+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "67.kfwl.lol",
+      "secret": "b5df144e99add138994f80d91b351a43",
+      "source_url": "https://t.me/webproxy/309",
+      "message_date": "2026-10-11T17:26:09+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "NewVersion.MY",
+      "secret": "c60988954529faf7447b7ef83203a020",
+      "source_url": "https://t.me/webproxy/264",
+      "message_date": "2026-09-29T15:36:52+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "andrew.teslaa.ru",
+      "secret": "bf114d9b470c646dfc68c90b2d995cb6",
+      "source_url": "https://t.me/webproxy/311",
+      "message_date": "2026-10-12T08:31:30+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "api.quickrouteapp.xyz",
+      "secret": "dded74276eabb934874721ad7a5c9e7c94",
+      "source_url": "https://t.me/webproxy/290",
+      "message_date": "2026-10-07T08:46:08+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "app.sosun4ik.top",
+      "secret": "ddbb0e45caf3bbce0d8d995cfb919fa9d6",
+      "source_url": "https://t.me/webproxy/313",
+      "message_date": "2026-10-12T15:31:08+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "apple.flare-free.xyz",
+      "secret": "aab65144eb3eea373eedf4febd7c5f41",
+      "source_url": "https://t.me/webproxy/319",
+      "message_date": "2026-10-14T13:34:40+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdn.annet.store",
+      "secret": "ddca57e619f19021cb16f973d60a981038",
+      "source_url": "https://t.me/webproxy/323",
+      "message_date": "2026-10-15T17:01:01+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdn.flowaccess.site",
+      "secret": "dd1924acaec2bb63dac896a6d02a382f38",
+      "source_url": "https://t.me/webproxy/258",
+      "message_date": "2026-09-27T18:30:05+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdn.info24.shop",
+      "secret": "dd1b302460be4782fef13b3f5719ef42e8",
+      "source_url": "https://t.me/webproxy/306",
+      "message_date": "2026-10-10T09:11:03+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdn03vkvideo.liketg.org",
+      "secret": "dd5e96b3d99db354ecefb16d0bf46ad2ea",
+      "source_url": "https://t.me/webproxy/353",
+      "message_date": "2026-10-18T11:42:14+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdncrest.org",
+      "secret": "dd443b886395741c3e987675d08346c2fa",
+      "source_url": "https://t.me/webproxy/285",
+      "message_date": "2026-10-05T11:12:32+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdnpulse.org",
+      "secret": "dd93ca4f625e3fe727f9f3b42abef3fcf6",
+      "source_url": "https://t.me/webproxy/275",
+      "message_date": "2026-10-01T21:03:00+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdnreef.com",
+      "secret": "dd36c36e6a800d85752536a6e1db866e7c",
+      "source_url": "https://t.me/webproxy/302",
+      "message_date": "2026-10-09T13:29:14+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdnshoal.com",
+      "secret": "ddd5166c9bdf5f3320f74bcfe1f53f72ce",
+      "source_url": "https://t.me/webproxy/307",
+      "message_date": "2026-10-10T15:06:22+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdnsurf.org",
+      "secret": "ddae20c52327f9abe96376568aadf1734f",
+      "source_url": "https://t.me/webproxy/303",
+      "message_date": "2026-10-09T17:02:06+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdnvkvideo01.liketg.org",
+      "secret": "dd65e58cc66c77a3b454dda5546a1acbcf",
+      "source_url": "https://t.me/webproxy/365",
+      "message_date": "2026-10-19T19:56:57+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdnwake.org",
+      "secret": "dd1a3e7d08f914aa2fd8ca999b65a0568a",
+      "source_url": "https://t.me/webproxy/303",
+      "message_date": "2026-10-09T17:02:06+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "cdnwave.org",
+      "secret": "dd65373b054948c84eb4a74630d4a79b22",
+      "source_url": "https://t.me/webproxy/302",
+      "message_date": "2026-10-09T13:29:14+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "dav24.nextclouds.moscow",
+      "secret": "dda4634a465fed6c8075a1ba6cd311a343",
+      "source_url": "https://t.me/webproxy/296",
+      "message_date": "2026-10-08T16:15:18+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "deepsky.club",
+      "secret": "1549de91e71978183354fa780ac7d53f",
+      "source_url": "https://t.me/webproxy/273",
+      "message_date": "2026-10-01T10:55:23+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "detourcloak.site",
+      "secret": "ddb721613eedafe8faf13c829c6c72cafe",
+      "source_url": "https://t.me/webproxy/282",
+      "message_date": "2026-10-04T16:47:50+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "drovane.xyz",
+      "secret": "dd7ec606b60fd41b56a57e7e47671c41bd",
+      "source_url": "https://t.me/webproxy/360",
+      "message_date": "2026-10-19T07:56:39+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "eu.compono.online",
+      "secret": "0b03d5b08b5592096de09e41ebbfc137",
+      "source_url": "https://t.me/webproxy/294",
+      "message_date": "2026-10-08T08:22:33+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "flare-free.xyz",
+      "secret": "ec101543b4d4b7f77045eca0d821a641",
+      "source_url": "https://t.me/webproxy/293",
+      "message_date": "2026-10-07T21:03:49+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "game.spacee.xyz",
+      "secret": "18adcc8527031c4f27eddcd437bd27e2",
+      "source_url": "https://t.me/webproxy/318",
+      "message_date": "2026-10-14T06:59:58+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "go.topproxt.asia",
+      "secret": "dd535832419a84f29b6e2c00e20687f9d9",
+      "source_url": "https://t.me/webproxy/313",
+      "message_date": "2026-10-12T15:31:08+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "independence.surf",
+      "secret": "0b9db4c03c176aac566b33d2328946bb",
+      "source_url": "https://t.me/webproxy/349",
+      "message_date": "2026-10-18T06:30:01+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "istore.watch",
+      "secret": "50be182fd04064d5af51048092f47b48",
+      "source_url": "https://t.me/webproxy/199",
+      "message_date": "2026-09-17T12:22:26+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "k1.dlpd.cc",
+      "secret": "dd9bf46ec57803c09def701a3844858c",
+      "source_url": "https://t.me/webproxy/358",
+      "message_date": "2026-10-18T19:31:11+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "kak.hotstbvs.ru",
+      "secret": "19642a8b48eff48766d6f7f240209026",
+      "source_url": "https://t.me/webproxy/309",
+      "message_date": "2026-10-11T17:26:09+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "max-messenger.annet.site",
+      "secret": "03c454786c012ecec1b80054117de6e7",
+      "source_url": "https://t.me/webproxy/272",
+      "message_date": "2026-10-01T08:02:23+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "max-speed.co.uk",
+      "secret": "84738086f0aa4f0c4f4b977e9d0b254e",
+      "source_url": "https://t.me/webproxy/305",
+      "message_date": "2026-10-09T20:58:53+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "msk1.compono.online",
+      "secret": "709f15df656614f711c26a797c656f54",
+      "source_url": "https://t.me/webproxy/317",
+      "message_date": "2026-10-13T19:52:02+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "msk2.compono.online",
+      "secret": "709f15df656614f711c26a797c656f54",
+      "source_url": "https://t.me/webproxy/317",
+      "message_date": "2026-10-13T19:52:02+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "mtproto.win",
+      "secret": "dde5544cb710bae52b8bcbc05375921c16",
+      "source_url": "https://t.me/webproxy/306",
+      "message_date": "2026-10-10T09:11:03+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "my.woyt.pro",
+      "secret": "8e0eb653b4a296e7d05c98371a277f8a",
+      "source_url": "https://t.me/webproxy/235",
+      "message_date": "2026-09-23T18:07:20+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "n3k1t41996bs.site",
+      "secret": "fe13948493577f314ffe3d703f532685",
+      "source_url": "https://t.me/webproxy/261",
+      "message_date": "2026-09-28T17:07:04+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "naap1.cdnflow.store",
+      "secret": "2adba7744ab0b1ca88b609561c0334a1",
+      "source_url": "https://t.me/webproxy/291",
+      "message_date": "2026-10-07T16:32:12+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "neomap.club",
+      "secret": "3082e7f2e4ebb3abec0b8011fc493653",
+      "source_url": "https://t.me/webproxy/287",
+      "message_date": "2026-10-05T20:57:52+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "netherlands.gamma-kvn.com",
+      "secret": "1f39305372faa27bf1abe2c0bdc6f08e",
+      "source_url": "https://t.me/webproxy/216",
+      "message_date": "2026-09-19T16:22:46+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "one.nxrweb.shop",
+      "secret": "dd7287be476993a67190dbcbe946167b3c",
+      "source_url": "https://t.me/webproxy/301",
+      "message_date": "2026-10-09T10:53:40+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "rnd.tirel.top",
+      "secret": "b0bfb76c2fa6afb7970c89607679f7a0",
+      "source_url": "https://t.me/webproxy/271",
+      "message_date": "2026-09-30T18:09:20+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "russia.compono.online",
+      "secret": "709f15df656614f711c26a797c656f54",
+      "source_url": "https://t.me/webproxy/294",
+      "message_date": "2026-10-08T08:22:33+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "space.emancipation.icu",
+      "secret": "0b9db4c03c176aac566b33d2328946bb",
+      "source_url": "https://t.me/webproxy/319",
+      "message_date": "2026-10-14T13:34:40+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "tele-connect.app",
+      "secret": "dd1c82c514fdeb0d26cf8658d823220084",
+      "source_url": "https://t.me/webproxy/360",
+      "message_date": "2026-10-19T07:56:39+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "tfirst.gigimystore.ir",
+      "secret": "38e6d17b7c9a9fbad3858654b87af7bf",
+      "source_url": "https://t.me/webproxy/263",
+      "message_date": "2026-09-29T11:36:19+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "tg.chaofan.one",
+      "secret": "a3f5c8d2e1b7094a6c8d3f5e2b1a709c",
+      "source_url": "https://t.me/webproxy/356",
+      "message_date": "2026-10-18T16:52:07+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "tg.daodundog.workers.dev",
+      "secret": "3dc48cffa2fef9baf20ca725b434d05f",
+      "source_url": "https://t.me/webproxy/327",
+      "message_date": "2026-10-15T18:34:23+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "tg.empty-space.org",
+      "secret": "7e2b68c52cacccad90eda282852e16ab",
+      "source_url": "https://t.me/webproxy/290",
+      "message_date": "2026-10-07T08:46:08+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "tg.hjvpn.net",
+      "secret": "dd1eb35dbbf460085849a45046b07911a1",
+      "source_url": "https://t.me/webproxy/273",
+      "message_date": "2026-10-01T10:55:23+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "tg.wd188.one",
+      "secret": "b8e2f4a6c1d7095e3a8c6d2f5b1a4097",
+      "source_url": "https://t.me/webproxy/311",
+      "message_date": "2026-10-12T08:31:30+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "tgfree.xinglanhui.cc",
+      "secret": "850a43900159cedacbb4a488e143c765",
+      "source_url": "https://t.me/webproxy/322",
+      "message_date": "2026-10-15T08:48:56+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "tgw2.badvpn.win",
+      "secret": "ddde4326ac9c43717cc9a603ab7be982d2",
+      "source_url": "https://t.me/webproxy/327",
+      "message_date": "2026-10-15T18:34:23+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "thebirds.world",
+      "secret": "bace78f2e29ada4137186fa8b7d14f1d",
+      "source_url": "https://t.me/webproxy/256",
+      "message_date": "2026-09-27T15:22:43+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "ultrafast.blog",
+      "secret": "35ed0d45ffb5299af435492606ca6717",
+      "source_url": "https://t.me/webproxy/305",
+      "message_date": "2026-10-09T20:58:53+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "vlesso4ka.monster",
+      "secret": "3157b224c9a69b9d1ba04f1229514b22",
+      "source_url": "https://t.me/webproxy/321",
+      "message_date": "2026-10-14T21:08:54+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "vpsnuna.ru",
+      "secret": "f8b5f2f8556cad4b4ef5576bef407884",
+      "source_url": "https://t.me/webproxy/209",
+      "message_date": "2026-09-18T13:59:12+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "wallweb-29817c82fa-do.1w-al-lw-e-b1.workers.dev",
+      "secret": "9cdc64117e6d61b8408ae42ffe4e3990",
+      "source_url": "https://t.me/webproxy/308",
+      "message_date": "2026-10-11T09:41:28+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web-de2.tgproxy.pink",
+      "secret": "ddf89bbc302851faf46edca4206ad06613",
+      "source_url": "https://t.me/webproxy/323",
+      "message_date": "2026-10-15T17:01:01+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web-twc.cerebium.ru",
+      "secret": "dd33df0b808230e093d7098fdf784a3dab",
+      "source_url": "https://t.me/webproxy/293",
+      "message_date": "2026-10-07T21:03:49+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.antenna-mzt.live",
+      "secret": "73a41a35f42a05667dc578a25d99868f",
+      "source_url": "https://t.me/webproxy/308",
+      "message_date": "2026-10-11T09:41:28+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.arixo.shop",
+      "secret": "dd27e57f496bbf279605f0198ea6d26067",
+      "source_url": "https://t.me/webproxy/336",
+      "message_date": "2026-10-16T18:00:28+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.detourcloak.site",
+      "secret": "dd77fa53c2b5473d4715b2493f8db21eb3",
+      "source_url": "https://t.me/webproxy/279",
+      "message_date": "2026-10-03T08:04:37+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.dota2top.shop",
+      "secret": "ddbb0e45caf3bbce0d8d995cfb919fa9d6",
+      "source_url": "https://t.me/webproxy/310",
+      "message_date": "2026-10-11T20:45:35+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.jumbleconnect.ru",
+      "secret": "89a5ca0dd451fbe51762d7cdcc13a5be",
+      "source_url": "https://t.me/webproxy/256",
+      "message_date": "2026-09-27T15:22:43+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.kostyanchekloh.lol",
+      "secret": "ddc369a1f6758962c7ca17946e87152eac",
+      "source_url": "https://t.me/webproxy/262",
+      "message_date": "2026-09-29T09:27:32+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.shmelproxy.top",
+      "secret": "dd05f548574d4e77a9d068a60933c8ba1c",
+      "source_url": "https://t.me/webproxy/282",
+      "message_date": "2026-10-04T16:47:50+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.sinlx.ir",
+      "secret": "d818f0462d1b275b8854f85c35e64108",
+      "source_url": "https://t.me/webproxy/353",
+      "message_date": "2026-10-18T11:42:14+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.topproxt.asia",
+      "secret": "dd082242bf1744c8cc7d92b703b2746481",
+      "source_url": "https://t.me/webproxy/336",
+      "message_date": "2026-10-16T18:00:28+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.topproxt.asia",
+      "secret": "ddbb0e45caf3bbce0d8d995cfb919fa9d6",
+      "source_url": "https://t.me/webproxy/281",
+      "message_date": "2026-10-04T09:38:57+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "web.zainet.tech",
+      "secret": "fa488bdb4af55a669012cfaff5bf2328",
+      "source_url": "https://t.me/webproxy/215",
+      "message_date": "2026-09-19T11:19:56+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "webproxy-danfeng.304999.xyz",
+      "secret": "70a26ec9fc608867e907d729fe3cf65f",
+      "source_url": "https://t.me/webproxy/291",
+      "message_date": "2026-10-07T16:32:12+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "webproxy.stream",
+      "secret": "9fc8d7d1aeee614bd5fa3b760da44dd3",
+      "source_url": "https://t.me/webproxy/365",
+      "message_date": "2026-10-19T19:56:57+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "webproxy1.gram.blog",
+      "secret": "9e44d13ce2b5296286da74b3dda5b95f",
+      "source_url": "https://t.me/webproxy/245",
+      "message_date": "2026-09-25T13:33:00+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "webproxy3.gram.blog",
+      "secret": "f588977fcd87f2d6850e697ac3df1772",
+      "source_url": "https://t.me/webproxy/277",
+      "message_date": "2026-10-02T15:42:05+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "webtg-1.stepavpn.ru",
+      "secret": "ddc99839390b5db85d6f2160864e74c001",
+      "source_url": "https://t.me/webproxy/281",
+      "message_date": "2026-10-04T09:38:57+00:00",
+      "first_seen": "2026-10-20T00:01:52+00:00",
+      "last_seen": "2026-10-20T00:01:52+00:00"
+    }
+  ]
+}
