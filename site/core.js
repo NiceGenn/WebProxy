@@ -17,6 +17,12 @@ export function proxyLink(proxy) {
 export function telegramLink(proxy) {
   return 'tg://webproxy' + new URL(proxyLink(proxy)).search;
 }
+const addedDateFormatter = new Intl.DateTimeFormat('ru-RU', { timeZone: 'Asia/Yakutsk', day: '2-digit', month: '2-digit', year: 'numeric' });
+export function formatAddedDate(value) {
+  if (typeof value !== 'string') return null;
+  const date = new Date(value);
+  return Number.isFinite(date.getTime()) ? addedDateFormatter.format(date) : null;
+}
 export function selectProxies(proxies, { search = '', filter = 'all', sort = 'default', direction = 'asc' } = {}) {
   const rows = proxies.filter(p => p.server.includes(search.toLowerCase().trim()) && (filter === 'all' || p.status === filter));
   const order = new Map(proxies.map((p, index) => [p, index]));

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { DEFAULT_PROXIES } from '../site/proxies.js';
-import { parseLink, proxyLink, telegramLink, selectProxies, probe } from '../site/core.js';
+import { parseLink, proxyLink, telegramLink, selectProxies, probe, formatAddedDate } from '../site/core.js';
 
 test('All 32 original links round-trip without modifying their secrets', () => {
   assert.equal(DEFAULT_PROXIES.length, 32);
@@ -26,6 +26,13 @@ test('WebProxy deep links retain server spelling and secret, and reject duplicat
   const secret = 'Dd0123456789abcdef0123456789ABCDEF';
   assert.deepEqual(parseLink(`tg://webproxy?server=Web.Example.org&secret=${secret}`), { server: 'Web.Example.org', secret });
   assert.throws(() => parseLink(`https://t.me/webproxy?server=a.com&secret=${secret}&secret=${secret}`));
+});
+
+test('Addition dates use the site timezone and handle missing legacy dates', () => {
+  assert.equal(formatAddedDate('2026-10-13T12:02:57Z'), '13.10.2026');
+  assert.equal(formatAddedDate('2026-10-13T23:30:00Z'), '14.10.2026');
+  assert.equal(formatAddedDate(null), null);
+  assert.equal(formatAddedDate('not-a-date'), null);
 });
 test('Search, status filters and latency sorting preserve source order and put failed checks last', () => {
   const rows = [{ server: 'b.com', status: 'reachable', latency: 250 }, { server: 'a.com', status: 'unreachable', latency: null }, { server: 'c.com', status: 'reachable', latency: 90 }];

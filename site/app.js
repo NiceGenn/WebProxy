@@ -1,19 +1,20 @@
-import { DEFAULT_PROXIES } from './proxies.js?v=20261013-5';
-import { parseLink, proxyLink, telegramLink, selectProxies, probe } from './core.js?v=20261013-5';
+import { DEFAULT_PROXIES } from './proxies.js?v=20261020-6';
+import { parseLink, proxyLink, telegramLink, selectProxies, probe, formatAddedDate } from './core.js?v=20261020-6';
 
 const $ = selector => document.querySelector(selector);
 const STORAGE_KEY = 'webproxy-monitor-v1';
 const keyOf = p => `${p.server}\u0000${p.secret}`;
+const DEFAULT_ADDED_AT = '2026-10-13T12:02:57Z';
 let saved = {};
 try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}') || {}; } catch { /* Storage may be unavailable. */ }
 const custom = [];
 for (const item of (Array.isArray(saved.custom) ? saved.custom.slice(0, 68) : [])) {
   try {
     const parsed = parseLink(proxyLink(item));
-    if (!DEFAULT_PROXIES.some(p => keyOf(p) === keyOf(parsed)) && !custom.some(p => keyOf(p) === keyOf(parsed))) custom.push(parsed);
+    if (!DEFAULT_PROXIES.some(p => keyOf(p) === keyOf(parsed)) && !custom.some(p => keyOf(p) === keyOf(parsed))) custom.push({ ...parsed, addedAt: formatAddedDate(item.addedAt) ? item.addedAt : null });
   } catch { /* Ignore malformed storage entries. */ }
 }
-const proxies = [...DEFAULT_PROXIES, ...custom].map(p => {
+const proxies = [...DEFAULT_PROXIES.map(p => ({ ...p, addedAt: DEFAULT_ADDED_AT })), ...custom].map(p => {
   const result = saved.results?.[p.server];
   const valid = result && ['reachable', 'unreachable'].includes(result.status) && Number.isFinite(result.checkedAt) && (result.status !== 'reachable' || (Number.isFinite(result.latency) && result.latency > 0));
   return { ...p, status: valid ? result.status : 'unknown', latency: valid ? result.latency : null, checkedAt: valid ? result.checkedAt : null, history: Array.isArray(result?.history) ? result.history.filter(h => ['reachable', 'unreachable'].includes(h)).slice(-12) : [] };
@@ -56,9 +57,11 @@ function render() {
   const fragment = document.createDocumentFragment();
   for (const p of visible) {
     const row = document.createElement('tr');
-    row.innerHTML = `<td class="number"></td><td><div class="server-cell"><span class="server-avatar"><svg><use href="#i-globe"/></svg></span><span class="server-name"></span></div></td><td><span class="status"><span class="dot"></span><span class="status-label"></span></span></td><td class="latency"></td><td class="history-cell"><div class="history"></div></td><td class="actions-cell"><div class="row-actions"><button class="copy-button"><svg><use href="#i-copy"/></svg></button><button type="button" class="connect-button">Подключить <svg><use href="#i-arrow"/></svg></button></div></td>`;
+    row.innerHTML = `<td class="number"></td><td><div class="server-cell"><span class="server-avatar"><svg><use href="#i-globe"/></svg></span><div class="server-details"><span class="server-name"></span><span class="server-added"></span></div></div></td><td><span class="status"><span class="dot"></span><span class="status-label"></span></span></td><td class="latency"></td><td class="history-cell"><div class="history"></div></td><td class="actions-cell"><div class="row-actions"><button class="copy-button"><svg><use href="#i-copy"/></svg></button><button type="button" class="connect-button">Подключить <svg><use href="#i-arrow"/></svg></button></div></td>`;
     row.querySelector('.number').textContent = String(proxies.indexOf(p) + 1).padStart(2, '0');
     row.querySelector('.server-name').textContent = p.server;
+    const addedDate = formatAddedDate(p.addedAt);
+    row.querySelector('.server-added').textContent = addedDate ? `Добавлен: ${addedDate}` : 'Дата добавления не сохранена';
     const status = row.querySelector('.status');
     status.classList.add(p.status);
     status.title = p.checkedAt ? `Последняя проверка: ${new Date(p.checkedAt).toLocaleString('ru-RU')}` : 'Нажмите «Проверить серверы»';
@@ -197,7 +200,7 @@ $('#add-form').addEventListener('submit', event => {
   try {
     for (let i = 0; i < lines.length; i++) {
       let p; try { p = parseLink(lines[i]); } catch (error) { throw new Error(`Строка ${i + 1}: ${error.message}`); }
-      if (!proxies.some(old => keyOf(old) === keyOf(p)) && !parsed.some(old => keyOf(old) === keyOf(p))) parsed.push(p);
+      if (!proxies.some(old => keyOf(old) === keyOf(p)) && !parsed.some(old => keyOf(old) === keyOf(p))) parsed.push({ ...p, addedAt: new Date().toISOString() });
     }
     if (proxies.length + parsed.length > 100) throw new Error('Можно хранить не больше 100 серверов.');
     if (!parsed.length) throw new Error('Новых серверов нет: эти домены уже в списке.');
@@ -222,7 +225,7 @@ async function loadCollected() {
         seen.add(keyOf(parsed));
         const result = saved.results?.[parsed.server];
         const valid = result && ['reachable', 'unreachable'].includes(result.status) && Number.isFinite(result.checkedAt) && (result.status !== 'reachable' || (Number.isFinite(result.latency) && result.latency > 0));
-        proxies.push({ ...parsed, status: valid ? result.status : 'unknown', latency: valid ? result.latency : null, checkedAt: valid ? result.checkedAt : null, history: Array.isArray(result?.history) ? result.history.filter(h => ['reachable', 'unreachable'].includes(h)).slice(-12) : [] });
+        proxies.push({ ...parsed, addedAt: formatAddedDate(item.first_seen) ? item.first_seen : null, status: valid ? result.status : 'unknown', latency: valid ? result.latency : null, checkedAt: valid ? result.checkedAt : null, history: Array.isArray(result?.history) ? result.history.filter(h => ['reachable', 'unreachable'].includes(h)).slice(-12) : [] });
         added++;
       } catch { /* Invalid remote entry cannot affect the fallback list. */ }
     }
