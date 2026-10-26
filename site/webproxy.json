@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-20T10:47:39+00:00",
+  "collected_at": "2026-10-26T06:40:09+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -33,7 +33,7 @@
       "source_url": "https://t.me/webproxy/367",
       "message_date": "2026-10-20T06:45:01+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T10:47:39+00:00"
+      "last_seen": "2026-10-26T06:40:09+00:00"
     },
     {
       "server": "67.kfwl.lol",
@@ -206,10 +206,10 @@
     {
       "server": "drovane.xyz",
       "secret": "dd7ec606b60fd41b56a57e7e47671c41bd",
-      "source_url": "https://t.me/webproxy/360",
-      "message_date": "2026-10-19T07:56:39+00:00",
+      "source_url": "https://t.me/webproxy/392",
+      "message_date": "2026-10-23T10:45:01+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-10-26T06:40:07+00:00"
     },
     {
       "server": "eu.compono.online",
@@ -249,7 +249,7 @@
       "source_url": "https://t.me/webproxy/349",
       "message_date": "2026-10-18T06:30:01+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-10-26T06:40:09+00:00"
     },
     {
       "server": "istore.watch",
@@ -310,10 +310,10 @@
     {
       "server": "mtproto.win",
       "secret": "dde5544cb710bae52b8bcbc05375921c16",
-      "source_url": "https://t.me/webproxy/306",
-      "message_date": "2026-10-10T09:11:03+00:00",
+      "source_url": "https://t.me/webproxy/398",
+      "message_date": "2026-10-23T19:45:01+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-10-26T06:40:07+00:00"
     },
     {
       "server": "my.woyt.pro",
@@ -390,10 +390,10 @@
     {
       "server": "tele-connect.app",
       "secret": "dd1c82c514fdeb0d26cf8658d823220084",
-      "source_url": "https://t.me/webproxy/360",
-      "message_date": "2026-10-19T07:56:39+00:00",
+      "source_url": "https://t.me/webproxy/386",
+      "message_date": "2026-10-22T16:45:02+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-10-26T06:40:07+00:00"
     },
     {
       "server": "tfirst.gigimystore.ir",
@@ -518,18 +518,18 @@
     {
       "server": "web.antenna-mzt.live",
       "secret": "73a41a35f42a05667dc578a25d99868f",
-      "source_url": "https://t.me/webproxy/308",
-      "message_date": "2026-10-11T09:41:28+00:00",
+      "source_url": "https://t.me/webproxy/406",
+      "message_date": "2026-10-24T18:32:33+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-10-26T06:40:07+00:00"
     },
     {
       "server": "web.arixo.shop",
       "secret": "dd27e57f496bbf279605f0198ea6d26067",
-      "source_url": "https://t.me/webproxy/336",
-      "message_date": "2026-10-16T18:00:28+00:00",
+      "source_url": "https://t.me/webproxy/390",
+      "message_date": "2026-10-23T06:45:01+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-10-26T06:40:07+00:00"
     },
     {
       "server": "web.detourcloak.site",
@@ -550,10 +550,10 @@
     {
       "server": "web.jumbleconnect.ru",
       "secret": "89a5ca0dd451fbe51762d7cdcc13a5be",
-      "source_url": "https://t.me/webproxy/256",
-      "message_date": "2026-09-27T15:22:43+00:00",
+      "source_url": "https://t.me/webproxy/412",
+      "message_date": "2026-10-25T14:53:19+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-10-26T06:40:07+00:00"
     },
     {
       "server": "web.kostyanchekloh.lol",
@@ -642,6 +642,142 @@
       "message_date": "2026-10-04T09:38:57+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
       "last_seen": "2026-10-20T00:01:52+00:00"
+    },
+    {
+      "server": "animals.independence.surf",
+      "secret": "dd8c8e46d0f8330d5a19aff107c088bc36",
+      "source_url": "https://t.me/webproxy/349",
+      "message_date": "2026-10-18T06:30:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:09+00:00"
+    },
+    {
+      "server": "b.proxy.rutubevideo.com",
+      "secret": "dd7343d1c53018a7d4640d93b3c3d85bb2",
+      "source_url": "https://t.me/webproxy/394",
+      "message_date": "2026-10-23T15:54:49+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "cacaoware.com",
+      "secret": "caca0caca0caca0caca0caca0caca000",
+      "source_url": "https://t.me/webproxy/396",
+      "message_date": "2026-10-23T18:30:49+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "k1.dlpd.cc",
+      "secret": "d2f8a4c6e1b9d3f7a8c2e4b6d8f1a3c5",
+      "source_url": "https://t.me/webproxy/371",
+      "message_date": "2026-10-20T18:45:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "mci-ir-irancell-ir-enamad-ir-irna-ir-bmi-ir-cafebazaar.rawsalt.ir",
+      "secret": "ddde2038f799899cae93b56397bcc7315c",
+      "source_url": "https://t.me/webproxy/382",
+      "message_date": "2026-10-22T06:45:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "mtweb.earthlink.work",
+      "secret": "dde6226acadf96479450b6a82c7936a3ae",
+      "source_url": "https://t.me/webproxy/401",
+      "message_date": "2026-10-24T08:14:53+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "slate-trail.ngweb.top",
+      "secret": "ddf58251c64b955d600b2f3749dc0a946d",
+      "source_url": "https://t.me/webproxy/394",
+      "message_date": "2026-10-23T15:54:49+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "stat1.freeprovider.online",
+      "secret": "dd29e3664097bdea35e951ee2329100e71",
+      "source_url": "https://t.me/webproxy/379",
+      "message_date": "2026-10-21T17:45:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "tavienne.xyz",
+      "secret": "dd0ac7290872004ac465cfea1b05d5ffb8",
+      "source_url": "https://t.me/webproxy/392",
+      "message_date": "2026-10-23T10:45:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "tg.borbos.site",
+      "secret": "dd1347bbe472edf74c2d7e9438af2e889b",
+      "source_url": "https://t.me/webproxy/379",
+      "message_date": "2026-10-21T17:45:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "tg1.85s.me",
+      "secret": "2a5c69f76e5764d0dc1abcef5d56b0de",
+      "source_url": "https://t.me/webproxy/373",
+      "message_date": "2026-10-21T07:10:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "tg2.85s.me",
+      "secret": "06a3b19f4dd77a708a5a3579361e2880",
+      "source_url": "https://t.me/webproxy/400",
+      "message_date": "2026-10-24T06:45:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "tg2.borbos.site",
+      "secret": "dd5ffeb74bd094549eb4d0eebe31dc226d",
+      "source_url": "https://t.me/webproxy/408",
+      "message_date": "2026-10-25T06:45:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "web.solasmp.ru",
+      "secret": "187ca529eae717212e041d4739156b09",
+      "source_url": "https://t.me/webproxy/367",
+      "message_date": "2026-10-20T06:45:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:09+00:00"
+    },
+    {
+      "server": "web.sosalproxy.lol",
+      "secret": "f08aacc789648a4a69ec9e1271816a87",
+      "source_url": "https://t.me/webproxy/413",
+      "message_date": "2026-10-25T16:45:02+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "webrtp.prtw.ru",
+      "secret": "ac893cee4c37ad1097b525b91cf00131",
+      "source_url": "https://t.me/webproxy/401",
+      "message_date": "2026-10-24T08:14:53+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
+    },
+    {
+      "server": "wpxisq52.cfd",
+      "secret": "dde2abaabd3ea7353fcde8d15a65ee7745",
+      "source_url": "https://t.me/webproxy/373",
+      "message_date": "2026-10-21T07:10:01+00:00",
+      "first_seen": "2026-10-26T06:40:07+00:00",
+      "last_seen": "2026-10-26T06:40:07+00:00"
     }
   ]
 }
