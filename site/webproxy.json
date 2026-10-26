@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-26T06:40:09+00:00",
+  "collected_at": "2026-10-26T08:50:57+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -206,10 +206,10 @@
     {
       "server": "drovane.xyz",
       "secret": "dd7ec606b60fd41b56a57e7e47671c41bd",
-      "source_url": "https://t.me/webproxy/392",
-      "message_date": "2026-10-23T10:45:01+00:00",
+      "source_url": "https://t.me/webproxy/417",
+      "message_date": "2026-10-26T08:45:02+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-26T06:40:07+00:00"
+      "last_seen": "2026-10-26T08:50:55+00:00"
     },
     {
       "server": "eu.compono.online",
@@ -710,10 +710,10 @@
     {
       "server": "tavienne.xyz",
       "secret": "dd0ac7290872004ac465cfea1b05d5ffb8",
-      "source_url": "https://t.me/webproxy/392",
-      "message_date": "2026-10-23T10:45:01+00:00",
+      "source_url": "https://t.me/webproxy/417",
+      "message_date": "2026-10-26T08:45:02+00:00",
       "first_seen": "2026-10-26T06:40:07+00:00",
-      "last_seen": "2026-10-26T06:40:07+00:00"
+      "last_seen": "2026-10-26T08:50:55+00:00"
     },
     {
       "server": "tg.borbos.site",
