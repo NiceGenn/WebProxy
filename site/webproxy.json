@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-26T17:54:00+00:00",
+  "collected_at": "2026-10-26T18:04:06+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -785,7 +785,7 @@
       "source_url": "https://t.me/webproxy/420",
       "message_date": "2026-10-26T17:49:55+00:00",
       "first_seen": "2026-10-26T17:53:57+00:00",
-      "last_seen": "2026-10-26T17:53:57+00:00"
+      "last_seen": "2026-10-26T18:04:06+00:00"
     },
     {
       "server": "tele.608002.xyz",
@@ -793,7 +793,7 @@
       "source_url": "https://t.me/webproxy/420",
       "message_date": "2026-10-26T17:49:55+00:00",
       "first_seen": "2026-10-26T17:53:57+00:00",
-      "last_seen": "2026-10-26T17:53:57+00:00"
+      "last_seen": "2026-10-26T18:04:06+00:00"
     }
   ]
 }
