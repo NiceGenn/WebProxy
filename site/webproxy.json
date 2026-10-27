@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-27T09:59:31+00:00",
+  "collected_at": "2026-10-27T12:50:29+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -646,10 +646,10 @@
     {
       "server": "animals.independence.surf",
       "secret": "dd8c8e46d0f8330d5a19aff107c088bc36",
-      "source_url": "https://t.me/webproxy/349",
-      "message_date": "2026-10-18T06:30:01+00:00",
+      "source_url": "https://t.me/webproxy/427",
+      "message_date": "2026-10-27T12:45:01+00:00",
       "first_seen": "2026-10-26T06:40:07+00:00",
-      "last_seen": "2026-10-26T06:40:09+00:00"
+      "last_seen": "2026-10-27T12:50:27+00:00"
     },
     {
       "server": "b.proxy.rutubevideo.com",
