@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-27T17:22:46+00:00",
+  "collected_at": "2026-10-27T17:32:51+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -801,7 +801,7 @@
       "source_url": "https://t.me/webproxy/429",
       "message_date": "2026-10-27T17:14:39+00:00",
       "first_seen": "2026-10-27T17:22:43+00:00",
-      "last_seen": "2026-10-27T17:22:43+00:00"
+      "last_seen": "2026-10-27T17:32:51+00:00"
     },
     {
       "server": "zarnia.xyz",
@@ -809,7 +809,7 @@
       "source_url": "https://t.me/webproxy/429",
       "message_date": "2026-10-27T17:14:39+00:00",
       "first_seen": "2026-10-27T17:22:43+00:00",
-      "last_seen": "2026-10-27T17:22:43+00:00"
+      "last_seen": "2026-10-27T17:32:51+00:00"
     }
   ]
 }
