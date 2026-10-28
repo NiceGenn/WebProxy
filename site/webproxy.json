@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-28T12:49:13+00:00",
+  "collected_at": "2026-10-28T13:09:21+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -209,7 +209,7 @@
       "source_url": "https://t.me/webproxy/435",
       "message_date": "2026-10-28T12:45:01+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-28T12:49:10+00:00"
+      "last_seen": "2026-10-28T13:09:21+00:00"
     },
     {
       "server": "eu.compono.online",
@@ -713,7 +713,7 @@
       "source_url": "https://t.me/webproxy/435",
       "message_date": "2026-10-28T12:45:01+00:00",
       "first_seen": "2026-10-26T06:40:07+00:00",
-      "last_seen": "2026-10-28T12:49:10+00:00"
+      "last_seen": "2026-10-28T13:09:21+00:00"
     },
     {
       "server": "tg.borbos.site",
