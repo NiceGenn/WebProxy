@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-28T13:09:21+00:00",
+  "collected_at": "2026-10-28T16:30:30+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -810,6 +810,22 @@
       "message_date": "2026-10-27T17:14:39+00:00",
       "first_seen": "2026-10-27T17:22:43+00:00",
       "last_seen": "2026-10-27T17:32:51+00:00"
+    },
+    {
+      "server": "clients-5.drive.klukva.online",
+      "secret": "ddc38ccd14b20d296330a4a0df66d24344",
+      "source_url": "https://t.me/webproxy/437",
+      "message_date": "2026-10-28T16:25:15+00:00",
+      "first_seen": "2026-10-28T16:30:28+00:00",
+      "last_seen": "2026-10-28T16:30:28+00:00"
+    },
+    {
+      "server": "yard-yaystal-menyat.yard-tg-bot.ru",
+      "secret": "9d6f25d551124b1042b9ab3fdb66f887",
+      "source_url": "https://t.me/webproxy/437",
+      "message_date": "2026-10-28T16:25:15+00:00",
+      "first_seen": "2026-10-28T16:30:28+00:00",
+      "last_seen": "2026-10-28T16:30:28+00:00"
     }
   ]
 }
