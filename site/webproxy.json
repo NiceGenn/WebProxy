@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-28T16:30:30+00:00",
+  "collected_at": "2026-10-28T16:50:39+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -817,7 +817,7 @@
       "source_url": "https://t.me/webproxy/437",
       "message_date": "2026-10-28T16:25:15+00:00",
       "first_seen": "2026-10-28T16:30:28+00:00",
-      "last_seen": "2026-10-28T16:30:28+00:00"
+      "last_seen": "2026-10-28T16:50:39+00:00"
     },
     {
       "server": "yard-yaystal-menyat.yard-tg-bot.ru",
@@ -825,7 +825,7 @@
       "source_url": "https://t.me/webproxy/437",
       "message_date": "2026-10-28T16:25:15+00:00",
       "first_seen": "2026-10-28T16:30:28+00:00",
-      "last_seen": "2026-10-28T16:30:28+00:00"
+      "last_seen": "2026-10-28T16:50:39+00:00"
     }
   ]
 }
