@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-28T16:50:39+00:00",
+  "collected_at": "2026-10-29T08:56:10+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -826,6 +826,22 @@
       "message_date": "2026-10-28T16:25:15+00:00",
       "first_seen": "2026-10-28T16:30:28+00:00",
       "last_seen": "2026-10-28T16:50:39+00:00"
+    },
+    {
+      "server": "dnevnik77.ru",
+      "secret": "dd2e48330b4d83b71760eec0ad79b61fbc",
+      "source_url": "https://t.me/webproxy/441",
+      "message_date": "2026-10-29T08:53:33+00:00",
+      "first_seen": "2026-10-29T08:56:07+00:00",
+      "last_seen": "2026-10-29T08:56:07+00:00"
+    },
+    {
+      "server": "ru04app.freesurfer.club",
+      "secret": "1be056afced79ce6ed81327e79b69151",
+      "source_url": "https://t.me/webproxy/441",
+      "message_date": "2026-10-29T08:53:33+00:00",
+      "first_seen": "2026-10-29T08:56:07+00:00",
+      "last_seen": "2026-10-29T08:56:07+00:00"
     }
   ]
 }
