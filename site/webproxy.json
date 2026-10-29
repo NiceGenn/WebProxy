@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-29T11:27:00+00:00",
+  "collected_at": "2026-10-29T12:47:32+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -842,6 +842,22 @@
       "message_date": "2026-10-29T08:53:33+00:00",
       "first_seen": "2026-10-29T08:56:07+00:00",
       "last_seen": "2026-10-29T11:27:00+00:00"
+    },
+    {
+      "server": "media8.chitodev.ir",
+      "secret": "ddba2fa3eb5dc6bcd3ba1d9c14c36f03cd",
+      "source_url": "https://t.me/webproxy/443",
+      "message_date": "2026-10-29T12:45:01+00:00",
+      "first_seen": "2026-10-29T12:47:30+00:00",
+      "last_seen": "2026-10-29T12:47:30+00:00"
+    },
+    {
+      "server": "web.maybexiaomi.ru",
+      "secret": "d4201d0fc585e66232746ccca306d896",
+      "source_url": "https://t.me/webproxy/443",
+      "message_date": "2026-10-29T12:45:01+00:00",
+      "first_seen": "2026-10-29T12:47:30+00:00",
+      "last_seen": "2026-10-29T12:47:30+00:00"
     }
   ]
 }
