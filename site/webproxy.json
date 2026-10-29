@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-29T08:56:10+00:00",
+  "collected_at": "2026-10-29T11:27:00+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -833,7 +833,7 @@
       "source_url": "https://t.me/webproxy/441",
       "message_date": "2026-10-29T08:53:33+00:00",
       "first_seen": "2026-10-29T08:56:07+00:00",
-      "last_seen": "2026-10-29T08:56:07+00:00"
+      "last_seen": "2026-10-29T11:27:00+00:00"
     },
     {
       "server": "ru04app.freesurfer.club",
@@ -841,7 +841,7 @@
       "source_url": "https://t.me/webproxy/441",
       "message_date": "2026-10-29T08:53:33+00:00",
       "first_seen": "2026-10-29T08:56:07+00:00",
-      "last_seen": "2026-10-29T08:56:07+00:00"
+      "last_seen": "2026-10-29T11:27:00+00:00"
     }
   ]
 }
