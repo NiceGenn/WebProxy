@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-30T17:57:46+00:00",
+  "collected_at": "2026-10-30T20:08:40+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -882,6 +882,22 @@
       "message_date": "2026-10-30T17:19:52+00:00",
       "first_seen": "2026-10-30T17:27:32+00:00",
       "last_seen": "2026-10-30T17:57:46+00:00"
+    },
+    {
+      "server": "static3.cdnariel.live",
+      "secret": "dd6413a7667d45e98d900249ab884f37e1",
+      "source_url": "https://t.me/webproxy/455",
+      "message_date": "2026-10-30T20:04:03+00:00",
+      "first_seen": "2026-10-30T20:08:37+00:00",
+      "last_seen": "2026-10-30T20:08:37+00:00"
+    },
+    {
+      "server": "static4.cdnariel.live",
+      "secret": "dd218e4ebf0a87e661255d2fcff84cbba5",
+      "source_url": "https://t.me/webproxy/455",
+      "message_date": "2026-10-30T20:04:03+00:00",
+      "first_seen": "2026-10-30T20:08:37+00:00",
+      "last_seen": "2026-10-30T20:08:37+00:00"
     }
   ]
 }
