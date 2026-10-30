@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-30T10:35:16+00:00",
+  "collected_at": "2026-10-30T17:27:34+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -874,6 +874,14 @@
       "message_date": "2026-10-30T09:02:28+00:00",
       "first_seen": "2026-10-30T09:04:45+00:00",
       "last_seen": "2026-10-30T10:35:16+00:00"
+    },
+    {
+      "server": "pr.zainetpro.online",
+      "secret": "37a12317dfb93a51773d0302a1e5e383",
+      "source_url": "https://t.me/webproxy/454",
+      "message_date": "2026-10-30T17:19:52+00:00",
+      "first_seen": "2026-10-30T17:27:32+00:00",
+      "last_seen": "2026-10-30T17:27:32+00:00"
     }
   ]
 }
