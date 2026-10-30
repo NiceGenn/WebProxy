@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-29T19:50:21+00:00",
+  "collected_at": "2026-10-30T09:04:47+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -858,6 +858,22 @@
       "message_date": "2026-10-29T12:45:01+00:00",
       "first_seen": "2026-10-29T12:47:30+00:00",
       "last_seen": "2026-10-29T12:47:30+00:00"
+    },
+    {
+      "server": "into.thedawnmist.ir",
+      "secret": "886c5123e0cc1c4f02a71465f3eb7d46",
+      "source_url": "https://t.me/webproxy/450",
+      "message_date": "2026-10-30T09:02:28+00:00",
+      "first_seen": "2026-10-30T09:04:45+00:00",
+      "last_seen": "2026-10-30T09:04:45+00:00"
+    },
+    {
+      "server": "mamajan.lolzgram.ru",
+      "secret": "64465540fa3539914fe5a8cc8a3929a8",
+      "source_url": "https://t.me/webproxy/450",
+      "message_date": "2026-10-30T09:02:28+00:00",
+      "first_seen": "2026-10-30T09:04:45+00:00",
+      "last_seen": "2026-10-30T09:04:45+00:00"
     }
   ]
 }
