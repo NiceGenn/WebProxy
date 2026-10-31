@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-31T10:53:36+00:00",
+  "collected_at": "2026-10-31T16:05:13+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -342,10 +342,10 @@
     {
       "server": "neomap.club",
       "secret": "3082e7f2e4ebb3abec0b8011fc493653",
-      "source_url": "https://t.me/webproxy/287",
-      "message_date": "2026-10-05T20:57:52+00:00",
+      "source_url": "https://t.me/webproxy/461",
+      "message_date": "2026-10-31T16:02:48+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-10-31T16:05:10+00:00"
     },
     {
       "server": "netherlands.gamma-kvn.com",
@@ -914,6 +914,14 @@
       "message_date": "2026-10-31T09:13:22+00:00",
       "first_seen": "2026-10-31T09:23:04+00:00",
       "last_seen": "2026-10-31T09:23:04+00:00"
+    },
+    {
+      "server": "clicktg.click-net.one",
+      "secret": "ddc7cd8aca0523870fd2b926f1ee06b91a",
+      "source_url": "https://t.me/webproxy/461",
+      "message_date": "2026-10-31T16:02:48+00:00",
+      "first_seen": "2026-10-31T16:05:10+00:00",
+      "last_seen": "2026-10-31T16:05:10+00:00"
     }
   ]
 }
