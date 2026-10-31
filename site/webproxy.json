@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-31T06:52:16+00:00",
+  "collected_at": "2026-10-31T09:23:06+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -894,10 +894,10 @@
     {
       "server": "static4.cdnariel.live",
       "secret": "dd218e4ebf0a87e661255d2fcff84cbba5",
-      "source_url": "https://t.me/webproxy/455",
-      "message_date": "2026-10-30T20:04:03+00:00",
+      "source_url": "https://t.me/webproxy/459",
+      "message_date": "2026-10-31T09:13:22+00:00",
       "first_seen": "2026-10-30T20:08:37+00:00",
-      "last_seen": "2026-10-30T20:08:37+00:00"
+      "last_seen": "2026-10-31T09:23:04+00:00"
     },
     {
       "server": "magmastyle.shop",
@@ -906,6 +906,14 @@
       "message_date": "2026-10-31T06:45:01+00:00",
       "first_seen": "2026-10-31T06:52:14+00:00",
       "last_seen": "2026-10-31T06:52:14+00:00"
+    },
+    {
+      "server": "yastrebbest.ru",
+      "secret": "dd6298b1898ba1567636789a1854893ddb",
+      "source_url": "https://t.me/webproxy/459",
+      "message_date": "2026-10-31T09:13:22+00:00",
+      "first_seen": "2026-10-31T09:23:04+00:00",
+      "last_seen": "2026-10-31T09:23:04+00:00"
     }
   ]
 }
