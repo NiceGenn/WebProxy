@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-30T20:08:40+00:00",
+  "collected_at": "2026-10-31T06:52:16+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -646,10 +646,10 @@
     {
       "server": "animals.independence.surf",
       "secret": "dd8c8e46d0f8330d5a19aff107c088bc36",
-      "source_url": "https://t.me/webproxy/447",
-      "message_date": "2026-10-29T19:45:01+00:00",
+      "source_url": "https://t.me/webproxy/457",
+      "message_date": "2026-10-31T06:45:01+00:00",
       "first_seen": "2026-10-26T06:40:07+00:00",
-      "last_seen": "2026-10-29T19:50:18+00:00"
+      "last_seen": "2026-10-31T06:52:14+00:00"
     },
     {
       "server": "b.proxy.rutubevideo.com",
@@ -898,6 +898,14 @@
       "message_date": "2026-10-30T20:04:03+00:00",
       "first_seen": "2026-10-30T20:08:37+00:00",
       "last_seen": "2026-10-30T20:08:37+00:00"
+    },
+    {
+      "server": "magmastyle.shop",
+      "secret": "dd7d1de86904a5c624c67d841d0c181ebb",
+      "source_url": "https://t.me/webproxy/457",
+      "message_date": "2026-10-31T06:45:01+00:00",
+      "first_seen": "2026-10-31T06:52:14+00:00",
+      "last_seen": "2026-10-31T06:52:14+00:00"
     }
   ]
 }
