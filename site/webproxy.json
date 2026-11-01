@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-10-31T20:56:53+00:00",
+  "collected_at": "2026-11-01T08:50:39+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -897,7 +897,7 @@
       "source_url": "https://t.me/webproxy/462",
       "message_date": "2026-10-31T20:51:22+00:00",
       "first_seen": "2026-10-30T20:08:37+00:00",
-      "last_seen": "2026-10-31T20:56:50+00:00"
+      "last_seen": "2026-11-01T08:50:39+00:00"
     },
     {
       "server": "magmastyle.shop",
@@ -913,7 +913,7 @@
       "source_url": "https://t.me/webproxy/462",
       "message_date": "2026-10-31T20:51:22+00:00",
       "first_seen": "2026-10-31T09:23:04+00:00",
-      "last_seen": "2026-10-31T20:56:50+00:00"
+      "last_seen": "2026-11-01T08:50:39+00:00"
     },
     {
       "server": "clicktg.click-net.one",
@@ -922,6 +922,14 @@
       "message_date": "2026-10-31T16:02:48+00:00",
       "first_seen": "2026-10-31T16:05:10+00:00",
       "last_seen": "2026-10-31T16:05:10+00:00"
+    },
+    {
+      "server": "boberlox.site",
+      "secret": "dd9a04242727dfa0a4a7c77e7813929c01",
+      "source_url": "https://t.me/webproxy/463",
+      "message_date": "2026-11-01T08:44:43+00:00",
+      "first_seen": "2026-11-01T08:50:37+00:00",
+      "last_seen": "2026-11-01T08:50:37+00:00"
     }
   ]
 }
