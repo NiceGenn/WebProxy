@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-02T14:45:18+00:00",
+  "collected_at": "2026-11-02T18:48:43+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -806,10 +806,10 @@
     {
       "server": "zarnia.xyz",
       "secret": "ddfd367c42b90b0d8ec99796e343454424",
-      "source_url": "https://t.me/webproxy/429",
-      "message_date": "2026-10-27T17:14:39+00:00",
+      "source_url": "https://t.me/webproxy/472",
+      "message_date": "2026-11-02T18:45:02+00:00",
       "first_seen": "2026-10-27T17:22:43+00:00",
-      "last_seen": "2026-10-27T17:32:51+00:00"
+      "last_seen": "2026-11-02T18:48:39+00:00"
     },
     {
       "server": "clients-5.drive.klukva.online",
