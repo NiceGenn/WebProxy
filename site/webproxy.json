@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-02T11:12:24+00:00",
+  "collected_at": "2026-11-02T14:45:18+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -926,10 +926,10 @@
     {
       "server": "boberlox.site",
       "secret": "dd9a04242727dfa0a4a7c77e7813929c01",
-      "source_url": "https://t.me/webproxy/463",
-      "message_date": "2026-11-01T08:44:43+00:00",
+      "source_url": "https://t.me/webproxy/470",
+      "message_date": "2026-11-02T14:45:01+00:00",
       "first_seen": "2026-11-01T08:50:37+00:00",
-      "last_seen": "2026-11-01T10:41:16+00:00"
+      "last_seen": "2026-11-02T14:45:14+00:00"
     }
   ]
 }
