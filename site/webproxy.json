@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-04T08:53:21+00:00",
+  "collected_at": "2026-11-04T11:15:29+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -313,7 +313,7 @@
       "source_url": "https://t.me/webproxy/484",
       "message_date": "2026-11-04T08:45:02+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-11-04T08:53:15+00:00"
+      "last_seen": "2026-11-04T11:15:29+00:00"
     },
     {
       "server": "my.woyt.pro",
@@ -937,7 +937,7 @@
       "source_url": "https://t.me/webproxy/484",
       "message_date": "2026-11-04T08:45:02+00:00",
       "first_seen": "2026-11-04T08:53:15+00:00",
-      "last_seen": "2026-11-04T08:53:15+00:00"
+      "last_seen": "2026-11-04T11:15:29+00:00"
     }
   ]
 }
