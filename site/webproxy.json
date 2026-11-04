@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-03T19:46:37+00:00",
+  "collected_at": "2026-11-04T08:53:21+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -310,10 +310,10 @@
     {
       "server": "mtproto.win",
       "secret": "dde5544cb710bae52b8bcbc05375921c16",
-      "source_url": "https://t.me/webproxy/398",
-      "message_date": "2026-10-23T19:45:01+00:00",
+      "source_url": "https://t.me/webproxy/484",
+      "message_date": "2026-11-04T08:45:02+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-26T06:40:07+00:00"
+      "last_seen": "2026-11-04T08:53:15+00:00"
     },
     {
       "server": "my.woyt.pro",
@@ -930,6 +930,14 @@
       "message_date": "2026-11-03T16:45:01+00:00",
       "first_seen": "2026-11-01T08:50:37+00:00",
       "last_seen": "2026-11-03T19:46:37+00:00"
+    },
+    {
+      "server": "twp-cf-twp.hardikanand.workers.dev",
+      "secret": "7ab00c4c41bc86649cd27f3d823f398d",
+      "source_url": "https://t.me/webproxy/484",
+      "message_date": "2026-11-04T08:45:02+00:00",
+      "first_seen": "2026-11-04T08:53:15+00:00",
+      "last_seen": "2026-11-04T08:53:15+00:00"
     }
   ]
 }
