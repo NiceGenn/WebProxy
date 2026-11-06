@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-06T20:54:14+00:00",
+  "collected_at": "2026-11-06T21:14:29+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -945,7 +945,7 @@
       "source_url": "https://t.me/webproxy/500",
       "message_date": "2026-11-06T17:54:52+00:00",
       "first_seen": "2026-11-04T16:09:20+00:00",
-      "last_seen": "2026-11-06T18:01:49+00:00"
+      "last_seen": "2026-11-06T21:14:29+00:00"
     },
     {
       "server": "webproxy.608002.xyz",
@@ -961,7 +961,7 @@
       "source_url": "https://t.me/webproxy/503",
       "message_date": "2026-11-06T20:45:01+00:00",
       "first_seen": "2026-11-06T06:54:15+00:00",
-      "last_seen": "2026-11-06T20:54:11+00:00"
+      "last_seen": "2026-11-06T21:14:29+00:00"
     },
     {
       "server": "p5ldy.proxystepa.site",
@@ -969,7 +969,7 @@
       "source_url": "https://t.me/webproxy/500",
       "message_date": "2026-11-06T17:54:52+00:00",
       "first_seen": "2026-11-06T18:01:49+00:00",
-      "last_seen": "2026-11-06T18:01:49+00:00"
+      "last_seen": "2026-11-06T21:14:29+00:00"
     }
   ]
 }
