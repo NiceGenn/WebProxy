@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-06T16:51:02+00:00",
+  "collected_at": "2026-11-06T18:01:52+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -942,10 +942,10 @@
     {
       "server": "hitachi-anchor-quality-meanwhile.trycloudflare.com",
       "secret": "ba354a2e29a1032a94a984cbfd7e219a",
-      "source_url": "https://t.me/webproxy/485",
-      "message_date": "2026-11-04T16:06:41+00:00",
+      "source_url": "https://t.me/webproxy/500",
+      "message_date": "2026-11-06T17:54:52+00:00",
       "first_seen": "2026-11-04T16:09:20+00:00",
-      "last_seen": "2026-11-04T20:33:26+00:00"
+      "last_seen": "2026-11-06T18:01:49+00:00"
     },
     {
       "server": "webproxy.608002.xyz",
@@ -962,6 +962,14 @@
       "message_date": "2026-11-06T16:45:02+00:00",
       "first_seen": "2026-11-06T06:54:15+00:00",
       "last_seen": "2026-11-06T16:50:59+00:00"
+    },
+    {
+      "server": "p5ldy.proxystepa.site",
+      "secret": "dd6912728806af77d58971051b231b7aaa",
+      "source_url": "https://t.me/webproxy/500",
+      "message_date": "2026-11-06T17:54:52+00:00",
+      "first_seen": "2026-11-06T18:01:49+00:00",
+      "last_seen": "2026-11-06T18:01:49+00:00"
     }
   ]
 }
