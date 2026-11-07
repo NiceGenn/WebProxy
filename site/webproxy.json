@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-06T21:14:29+00:00",
+  "collected_at": "2026-11-07T08:49:43+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -970,6 +970,22 @@
       "message_date": "2026-11-06T17:54:52+00:00",
       "first_seen": "2026-11-06T18:01:49+00:00",
       "last_seen": "2026-11-06T21:14:29+00:00"
+    },
+    {
+      "server": "honarnameh.blog",
+      "secret": "dd22956b07c888da0aeca25c1b7d805263",
+      "source_url": "https://t.me/webproxy/505",
+      "message_date": "2026-11-07T08:45:01+00:00",
+      "first_seen": "2026-11-07T08:49:39+00:00",
+      "last_seen": "2026-11-07T08:49:39+00:00"
+    },
+    {
+      "server": "pl.sosalproxy.lol",
+      "secret": "f08aacc789648a4a69ec9e1271816a87",
+      "source_url": "https://t.me/webproxy/505",
+      "message_date": "2026-11-07T08:45:01+00:00",
+      "first_seen": "2026-11-07T08:49:39+00:00",
+      "last_seen": "2026-11-07T08:49:39+00:00"
     }
   ]
 }
