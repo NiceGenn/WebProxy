@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-08T13:39:32+00:00",
+  "collected_at": "2026-11-08T17:22:05+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -406,10 +406,10 @@
     {
       "server": "tg.chaofan.one",
       "secret": "a3f5c8d2e1b7094a6c8d3f5e2b1a709c",
-      "source_url": "https://t.me/webproxy/356",
-      "message_date": "2026-10-18T16:52:07+00:00",
+      "source_url": "https://t.me/webproxy/517",
+      "message_date": "2026-11-08T17:12:15+00:00",
       "first_seen": "2026-10-20T00:01:52+00:00",
-      "last_seen": "2026-10-20T00:01:52+00:00"
+      "last_seen": "2026-11-08T17:22:02+00:00"
     },
     {
       "server": "tg.daodundog.workers.dev",
