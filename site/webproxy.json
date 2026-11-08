@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-08T10:17:47+00:00",
+  "collected_at": "2026-11-08T10:48:03+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -958,10 +958,10 @@
     {
       "server": "zov-svo.anixart.my",
       "secret": "5a913e5b550cda6d9340b1543e8d5465",
-      "source_url": "https://t.me/webproxy/511",
-      "message_date": "2026-11-07T19:45:01+00:00",
+      "source_url": "https://t.me/webproxy/515",
+      "message_date": "2026-11-08T10:45:01+00:00",
       "first_seen": "2026-11-06T06:54:15+00:00",
-      "last_seen": "2026-11-07T20:11:00+00:00"
+      "last_seen": "2026-11-08T10:48:00+00:00"
     },
     {
       "server": "p5ldy.proxystepa.site",
