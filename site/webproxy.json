@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-07T20:11:00+00:00",
+  "collected_at": "2026-11-08T09:47:34+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -910,10 +910,10 @@
     {
       "server": "yastrebbest.ru",
       "secret": "dd6298b1898ba1567636789a1854893ddb",
-      "source_url": "https://t.me/webproxy/506",
-      "message_date": "2026-11-07T11:04:57+00:00",
+      "source_url": "https://t.me/webproxy/514",
+      "message_date": "2026-11-08T09:42:04+00:00",
       "first_seen": "2026-10-31T09:23:04+00:00",
-      "last_seen": "2026-11-07T11:10:58+00:00"
+      "last_seen": "2026-11-08T09:47:32+00:00"
     },
     {
       "server": "clicktg.click-net.one",
@@ -986,6 +986,14 @@
       "message_date": "2026-11-07T08:45:01+00:00",
       "first_seen": "2026-11-07T08:49:39+00:00",
       "last_seen": "2026-11-07T08:49:39+00:00"
+    },
+    {
+      "server": "into.thedawnmist.ir",
+      "secret": "9cb80afcbf62caa29d6a8d9ff1c132ea",
+      "source_url": "https://t.me/webproxy/514",
+      "message_date": "2026-11-08T09:42:04+00:00",
+      "first_seen": "2026-11-08T09:47:32+00:00",
+      "last_seen": "2026-11-08T09:47:32+00:00"
     }
   ]
 }
