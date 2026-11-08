@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-08T09:47:34+00:00",
+  "collected_at": "2026-11-08T10:17:47+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -913,7 +913,7 @@
       "source_url": "https://t.me/webproxy/514",
       "message_date": "2026-11-08T09:42:04+00:00",
       "first_seen": "2026-10-31T09:23:04+00:00",
-      "last_seen": "2026-11-08T09:47:32+00:00"
+      "last_seen": "2026-11-08T10:17:47+00:00"
     },
     {
       "server": "clicktg.click-net.one",
@@ -993,7 +993,7 @@
       "source_url": "https://t.me/webproxy/514",
       "message_date": "2026-11-08T09:42:04+00:00",
       "first_seen": "2026-11-08T09:47:32+00:00",
-      "last_seen": "2026-11-08T09:47:32+00:00"
+      "last_seen": "2026-11-08T10:17:47+00:00"
     }
   ]
 }
