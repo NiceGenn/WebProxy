@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-09T16:45:33+00:00",
+  "collected_at": "2026-11-09T16:55:39+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -961,7 +961,7 @@
       "source_url": "https://t.me/webproxy/525",
       "message_date": "2026-11-09T16:45:01+00:00",
       "first_seen": "2026-11-06T06:54:15+00:00",
-      "last_seen": "2026-11-09T16:45:30+00:00"
+      "last_seen": "2026-11-09T16:55:39+00:00"
     },
     {
       "server": "p5ldy.proxystepa.site",
