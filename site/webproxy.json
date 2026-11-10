@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-10T09:17:05+00:00",
+  "collected_at": "2026-11-10T09:27:13+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1009,7 +1009,7 @@
       "source_url": "https://t.me/webproxy/530",
       "message_date": "2026-11-10T09:10:57+00:00",
       "first_seen": "2026-11-10T09:17:03+00:00",
-      "last_seen": "2026-11-10T09:17:03+00:00"
+      "last_seen": "2026-11-10T09:27:13+00:00"
     },
     {
       "server": "telematic.snichvpn.ru",
@@ -1017,7 +1017,7 @@
       "source_url": "https://t.me/webproxy/530",
       "message_date": "2026-11-10T09:10:57+00:00",
       "first_seen": "2026-11-10T09:17:03+00:00",
-      "last_seen": "2026-11-10T09:17:03+00:00"
+      "last_seen": "2026-11-10T09:27:13+00:00"
     }
   ]
 }
