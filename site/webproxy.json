@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-10T06:46:01+00:00",
+  "collected_at": "2026-11-10T09:17:05+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1002,6 +1002,22 @@
       "message_date": "2026-11-10T06:45:01+00:00",
       "first_seen": "2026-11-10T06:45:58+00:00",
       "last_seen": "2026-11-10T06:45:58+00:00"
+    },
+    {
+      "server": "comments.dailystorm.ru",
+      "secret": "dd925cedf8a6613e6d42a447b21adc309a",
+      "source_url": "https://t.me/webproxy/530",
+      "message_date": "2026-11-10T09:10:57+00:00",
+      "first_seen": "2026-11-10T09:17:03+00:00",
+      "last_seen": "2026-11-10T09:17:03+00:00"
+    },
+    {
+      "server": "telematic.snichvpn.ru",
+      "secret": "6a5cc9aa54fc4100761965d51d9872be",
+      "source_url": "https://t.me/webproxy/530",
+      "message_date": "2026-11-10T09:10:57+00:00",
+      "first_seen": "2026-11-10T09:17:03+00:00",
+      "last_seen": "2026-11-10T09:17:03+00:00"
     }
   ]
 }
