@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-11T19:52:17+00:00",
+  "collected_at": "2026-11-12T13:20:04+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1026,6 +1026,14 @@
       "message_date": "2026-11-10T19:45:01+00:00",
       "first_seen": "2026-11-10T19:51:18+00:00",
       "last_seen": "2026-11-10T19:51:18+00:00"
+    },
+    {
+      "server": "host.lavazemi3.co.uk",
+      "secret": "dea62db6b5217e5679e0a74b8a061840",
+      "source_url": "https://t.me/webproxy/545",
+      "message_date": "2026-11-12T13:18:43+00:00",
+      "first_seen": "2026-11-12T13:20:01+00:00",
+      "last_seen": "2026-11-12T13:20:01+00:00"
     }
   ]
 }
