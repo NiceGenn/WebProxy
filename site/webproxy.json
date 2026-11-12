@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-12T13:20:04+00:00",
+  "collected_at": "2026-11-12T21:14:50+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1034,6 +1034,14 @@
       "message_date": "2026-11-12T13:18:43+00:00",
       "first_seen": "2026-11-12T13:20:01+00:00",
       "last_seen": "2026-11-12T13:20:01+00:00"
+    },
+    {
+      "server": "foxkhabar.iranbetter.site",
+      "secret": "8c3f948ef155b7af5b669504553de3ff",
+      "source_url": "https://t.me/webproxy/549",
+      "message_date": "2026-11-12T21:07:50+00:00",
+      "first_seen": "2026-11-12T21:14:47+00:00",
+      "last_seen": "2026-11-12T21:14:47+00:00"
     }
   ]
 }
