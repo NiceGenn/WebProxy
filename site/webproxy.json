@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-12T21:14:50+00:00",
+  "collected_at": "2026-11-13T04:27:35+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1041,7 +1041,7 @@
       "source_url": "https://t.me/webproxy/549",
       "message_date": "2026-11-12T21:07:50+00:00",
       "first_seen": "2026-11-12T21:14:47+00:00",
-      "last_seen": "2026-11-12T21:14:47+00:00"
+      "last_seen": "2026-11-13T04:27:35+00:00"
     }
   ]
 }
