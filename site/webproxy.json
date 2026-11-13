@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-13T04:27:35+00:00",
+  "collected_at": "2026-11-13T18:02:59+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1038,10 +1038,18 @@
     {
       "server": "foxkhabar.iranbetter.site",
       "secret": "8c3f948ef155b7af5b669504553de3ff",
-      "source_url": "https://t.me/webproxy/549",
-      "message_date": "2026-11-12T21:07:50+00:00",
+      "source_url": "https://t.me/webproxy/556",
+      "message_date": "2026-11-13T17:58:38+00:00",
       "first_seen": "2026-11-12T21:14:47+00:00",
-      "last_seen": "2026-11-13T04:27:35+00:00"
+      "last_seen": "2026-11-13T18:02:56+00:00"
+    },
+    {
+      "server": "newbie-dev.shop",
+      "secret": "ddff3d8971acb64779a6cc4edb2920a3ee",
+      "source_url": "https://t.me/webproxy/556",
+      "message_date": "2026-11-13T17:58:38+00:00",
+      "first_seen": "2026-11-13T18:02:56+00:00",
+      "last_seen": "2026-11-13T18:02:56+00:00"
     }
   ]
 }
