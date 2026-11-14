@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-14T08:28:37+00:00",
+  "collected_at": "2026-11-14T14:40:53+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1066,6 +1066,14 @@
       "message_date": "2026-11-14T08:21:18+00:00",
       "first_seen": "2026-11-14T08:28:34+00:00",
       "last_seen": "2026-11-14T08:28:34+00:00"
+    },
+    {
+      "server": "cdn2.49945664.xyz",
+      "secret": "dd766bd0a36e8540850617a3ac971adb78",
+      "source_url": "https://t.me/webproxy/561",
+      "message_date": "2026-11-14T14:39:40+00:00",
+      "first_seen": "2026-11-14T14:40:50+00:00",
+      "last_seen": "2026-11-14T14:40:50+00:00"
     }
   ]
 }
