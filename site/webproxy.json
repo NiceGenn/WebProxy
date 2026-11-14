@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-14T14:40:53+00:00",
+  "collected_at": "2026-11-14T14:51:01+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1074,6 +1074,22 @@
       "message_date": "2026-11-14T14:39:40+00:00",
       "first_seen": "2026-11-14T14:40:50+00:00",
       "last_seen": "2026-11-14T14:40:50+00:00"
+    },
+    {
+      "server": "eu1.monterentals.me",
+      "secret": "ddb6827e80252fdc2e0c8c2ea0059170ca",
+      "source_url": "https://t.me/webproxy/562",
+      "message_date": "2026-11-14T14:45:01+00:00",
+      "first_seen": "2026-11-14T14:50:58+00:00",
+      "last_seen": "2026-11-14T14:50:58+00:00"
+    },
+    {
+      "server": "eu2.monterentals.me",
+      "secret": "ddabf13064a3bf0851a02ad67114f842ce",
+      "source_url": "https://t.me/webproxy/562",
+      "message_date": "2026-11-14T14:45:01+00:00",
+      "first_seen": "2026-11-14T14:50:58+00:00",
+      "last_seen": "2026-11-14T14:50:58+00:00"
     }
   ]
 }
