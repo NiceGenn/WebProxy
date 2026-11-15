@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-15T12:49:54+00:00",
+  "collected_at": "2026-11-15T13:00:00+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1057,7 +1057,7 @@
       "source_url": "https://t.me/webproxy/568",
       "message_date": "2026-11-15T12:49:50+00:00",
       "first_seen": "2026-11-14T08:28:34+00:00",
-      "last_seen": "2026-11-15T12:49:51+00:00"
+      "last_seen": "2026-11-15T13:00:00+00:00"
     },
     {
       "server": "tgp-faa5e4b7.9yzm3yekuoys.workers.dev",
