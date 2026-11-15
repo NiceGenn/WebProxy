@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-15T13:00:00+00:00",
+  "collected_at": "2026-11-15T19:53:21+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1030,10 +1030,10 @@
     {
       "server": "host.lavazemi3.co.uk",
       "secret": "dea62db6b5217e5679e0a74b8a061840",
-      "source_url": "https://t.me/webproxy/545",
-      "message_date": "2026-11-12T13:18:43+00:00",
+      "source_url": "https://t.me/webproxy/569",
+      "message_date": "2026-11-15T19:44:43+00:00",
       "first_seen": "2026-11-12T13:20:01+00:00",
-      "last_seen": "2026-11-12T13:20:01+00:00"
+      "last_seen": "2026-11-15T19:53:18+00:00"
     },
     {
       "server": "foxkhabar.iranbetter.site",
@@ -1098,6 +1098,14 @@
       "message_date": "2026-11-14T18:45:01+00:00",
       "first_seen": "2026-11-14T18:53:00+00:00",
       "last_seen": "2026-11-14T18:53:00+00:00"
+    },
+    {
+      "server": "nex.faradars.co.uk",
+      "secret": "dea62db6b5217e5679e0a74b8a061840",
+      "source_url": "https://t.me/webproxy/569",
+      "message_date": "2026-11-15T19:44:43+00:00",
+      "first_seen": "2026-11-15T19:53:18+00:00",
+      "last_seen": "2026-11-15T19:53:18+00:00"
     }
   ]
 }
