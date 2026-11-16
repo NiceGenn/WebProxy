@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-16T12:20:33+00:00",
+  "collected_at": "2026-11-16T18:03:20+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1054,10 +1054,10 @@
     {
       "server": "delestershop15.ir",
       "secret": "ba5a93a939e610895049252bb5566025",
-      "source_url": "https://t.me/webproxy/570",
-      "message_date": "2026-11-16T12:20:12+00:00",
+      "source_url": "https://t.me/webproxy/568",
+      "message_date": "2026-11-15T12:49:50+00:00",
       "first_seen": "2026-11-14T08:28:34+00:00",
-      "last_seen": "2026-11-16T12:20:30+00:00"
+      "last_seen": "2026-11-16T18:03:20+00:00"
     },
     {
       "server": "tgp-faa5e4b7.9yzm3yekuoys.workers.dev",
