@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-16T19:24:02+00:00",
+  "collected_at": "2026-11-17T10:29:54+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1122,6 +1122,14 @@
       "message_date": "2026-11-16T18:40:12+00:00",
       "first_seen": "2026-11-16T18:43:39+00:00",
       "last_seen": "2026-11-16T19:24:02+00:00"
+    },
+    {
+      "server": "hei.fanzon.co.uk",
+      "secret": "597354672a6f5bf07417958a69eb7860",
+      "source_url": "https://t.me/webproxy/572",
+      "message_date": "2026-11-17T10:23:23+00:00",
+      "first_seen": "2026-11-17T10:29:50+00:00",
+      "last_seen": "2026-11-17T10:29:50+00:00"
     }
   ]
 }
