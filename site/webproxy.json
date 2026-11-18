@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "channel": "webproxy",
-  "collected_at": "2026-11-17T14:52:07+00:00",
+  "collected_at": "2026-11-18T19:05:29+00:00",
   "proxies": [
     {
       "server": "154.85.19.193.sslip.io",
@@ -1030,10 +1030,10 @@
     {
       "server": "host.lavazemi3.co.uk",
       "secret": "dea62db6b5217e5679e0a74b8a061840",
-      "source_url": "https://t.me/webproxy/569",
-      "message_date": "2026-11-15T19:44:43+00:00",
+      "source_url": "https://t.me/webproxy/581",
+      "message_date": "2026-11-18T19:03:51+00:00",
       "first_seen": "2026-11-12T13:20:01+00:00",
-      "last_seen": "2026-11-15T21:34:00+00:00"
+      "last_seen": "2026-11-18T19:05:26+00:00"
     },
     {
       "server": "foxkhabar.iranbetter.site",
@@ -1126,10 +1126,10 @@
     {
       "server": "hei.fanzon.co.uk",
       "secret": "597354672a6f5bf07417958a69eb7860",
-      "source_url": "https://t.me/webproxy/572",
-      "message_date": "2026-11-17T10:23:23+00:00",
+      "source_url": "https://t.me/webproxy/581",
+      "message_date": "2026-11-18T19:03:51+00:00",
       "first_seen": "2026-11-17T10:29:50+00:00",
-      "last_seen": "2026-11-17T11:00:09+00:00"
+      "last_seen": "2026-11-18T19:05:26+00:00"
     },
     {
       "server": "web.boberlox.site",
